@@ -1,0 +1,125 @@
+@font-face {
+	font-family: "FontAwesome";
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/fontawesome-webfont.eot') format('eot'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.svg') format('svg');
+}
+a {
+	text-decoration: none;
+}
+.jp-title {
+	color: #000000;
+	font-size: 10px;
+	text-align: center;
+}
+.jp-title ul {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+.jp-gui {
+	background: none repeat scroll 0 0 #ffffff;
+	border-radius: 3px;
+	margin-top: 10px; 
+	position: relative;
+}
+.jp-jplayer, .jp-audio {
+	margin: 50px auto;
+	width: 420px;
+}
+.jp-controls {
+	font-family: "FontAwesome";
+	text-decoration: none;
+	list-style: outside none none;
+	margin: 0;
+	padding: 0; 
+}
+.jp-controls li {
+	display: inline;
+}
+.jp-controls a {
+	color: #fff;	
+	text-decoration: none;
+}
+.jp-play, .jp-pause {
+	/*   border-right: 1px solid #000; */ 
+	color: #fff;
+    display: inline-block;
+    float: left;
+    height: 18px;
+    line-height: 48px;
+    text-align: left;
+    width: 80px;
+ 	text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+} 
+.jp-controls .jp-play:hover, .jp-controls .jp-pause:hover { 
+text-decoration: none;
+}
+.jp-mute, .jp-unmute {
+	display: inline-block;
+	z-index: 4;
+	height: 40px; 
+	line-height: 40px;
+	text-decoration: none;
+	/*  position: absolute; */
+	right: 40px;
+	top: 0;
+	width: 20px;
+	overflow: visible;
+	float: left;
+	clear: left;
+	color: #fff;
+	text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}  
+.jp-volume-bar {
+    position: absolute; 
+	top: 54px;
+	left: 2px;
+    width: 42px;
+    height: 7px;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) inset;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) inset;
+    background-color: #3F73AC;
+    overflow: hidden;
+}
+ 
+.jp-volume-bar-value {
+    background-color: #fff;
+    height: 8px;
+    border-radius: 20px 20px 20px 20px;
+}
+.jp-progress {
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2) inset;
+	overflow: hidden;
+	display: hidden;
+	position: absolute;
+	right: 133px;
+	top: 15px;
+	width: 210px;
+}
+.jp-play-bar {
+	background-color: #000000;
+	border-radius: 20px; }
+/*	height: 12px; 
+
+.jp-time-holder {
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 14px;
+	position: absolute;
+	right: 90px;
+	top: 14px;
+}
