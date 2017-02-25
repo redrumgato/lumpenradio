@@ -1,0 +1,133 @@
+@import "compass/css3";
+/* Variables */
+$width: 15em; // dropdown width
+$height: 2.5em; // dropdown height
+$ajust: 1em; // left & right padding in dropdown menu
+$radius: 3px;
+
+/* Colors */
+$black: #4d4d4d;
+$grey: #ecf0f1;
+$dark-grey: #bdc3c7;
+$green: #3F73AC;
+
+
+/* Common style */
+*{ box-sizing: border-box; }
+
+body{
+  font-family: 'Courier', monospace;
+  color: $black;  
+  letter-spacing: 4.5px;
+}
+
+h1{
+  font-family: 'Playball', cursive;
+  font-size: 6em;
+  font-weight: 700;
+  text-align: center; 
+  color: $green;
+  
+  margin: 0.25em 0; // Cosmetic value
+}
+
+h2{
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2em; // Cosmetic value
+}
+
+main{
+  background: #333;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+  
+  a{
+    color: #e75854;
+    text-decoration: none;
+    transition: color 250ms ease-in-out;
+    
+    &:hover{ color: #fafafa; }
+  }
+}
+
+/* Dropdown style */
+.dropdown{
+	width: $width;
+  margin: 0 auto;
+  
+  letter-spacing: 4.5px;
+  margin-bottom: 1em; // Cosmetic value
+
+	dt{
+		a {
+			display: block;
+      height: $height;
+      width: 100%;
+      
+			border: 1px solid $grey;
+			border-radius: $radius;
+			text-decoration: none;
+
+			&:hover, &:active{
+				border-color: $dark-grey;
+			}
+		}
+
+		span{
+      display: block;
+			padding: 0 $ajust;
+      
+      line-height: $height;
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHo+AACAQQAA+MoAAIC0AAB48QAA9RwAADw3AAAbzhlfIT4AAACJSURBVHjajNAxCsJAEEbhb5cU4i0sbHIaL6IQTxFPo4VeROwXQs4gKW1cWJZEM90wj5l5f0jDeMXBunqENIw7vLD9A09oIxL6FdsvSCENI2zwxH4BTmgxxeJc92P76cuIpRBuc6K45yZWwzPeleixBOLMr30tWgJZuqwcQJNFy2GzkHeHUMPwGQChFSPmzlJ1WgAAAABJRU5ErkJggg==) no-repeat scroll right center;
+			border-right: $ajust solid transparent;
+      cursor: pointer;
+		}
+	}
+  
+	dd {
+		position: relative;
+
+		ul {
+      display: none;
+      position: absolute;
+      left: 0;
+			top: -$height;
+      width: 100%;
+      
+      list-style: none;
+			background: #fff none repeat scroll 0 0;
+			border: 1px solid $dark-grey;
+			border-radius: $radius;
+      
+      li:first-child a:hover{
+        border-radius: $radius $radius 0 0;
+      }
+      
+      li:last-child a:hover{
+        border-radius: 0 0 $radius $radius;
+      }
+		}
+    
+		li a {
+      display: block;
+			padding: 0 $ajust;
+			
+			line-height: $height;
+      text-decoration: none;
+
+			&:hover{
+				background-color: $green;
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.selected{
+	font-weight: 700;
+}

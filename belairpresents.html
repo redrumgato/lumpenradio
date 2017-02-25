@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#3b7ec1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>WLPN // Shows // Todd Carter / bel_Air Presents</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/wlpn.css">
+    <link rel="stylesheet" href="cssplayer/style.css" type="text/css">
+    <link rel="stylesheet" href="cssplayer/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="css/hover.css" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js2/jquery.jplayer.min.js"></script>
+    <script src="js/jquery.li-scroller.1.0.js"></script>
+    <script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    <!-- SCROLLER SPEED -->
+    <script>
+        $(function() {
+            $("ul#demo").liScroll({
+                travelocity: 0.09 // the speed of scrolling
+            });
+        });
+    </script>
+
+    <!--FAVICON-->
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#3b7ec1">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#3b7ec1">
+
+    <!-- SMART APP BANNER -->
+    <meta name="apple-itunes-app" content="app-id=1002193127">
+
+    <!-- TWITTER CARD DATA -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@lumpenradio">
+    <meta name="twitter:title" content="WLPN Lumpen Radio">
+    <meta name="twitter:description" content="WLPN is a volunteer-run station that amplifies innovative ideas, plays eclectic curated music and broadcasts socially engaged commentary on the issues of our day." />
+    <meta name="twitter:image" content="http://www.lumpenradio.com/graphics/wlpn.png">
+
+
+    <!-- OPEN GRAPH DATA -->
+    <meta property="og:title" content="WLPN: Lumpen Radio" />
+    <meta property="og:url" content="http://www.lumpenradio.com/radius.html" />
+    <meta property="og:image" content="http://www.lumpenradio.com/graphics/djs/Radius/radiuslogo.jpg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:description" content="Radius presents PATCH, an ongoing series of curated playlists originally produced for the Free Music Archive, an interactive library of high-quality, legal audio downloads directed by WFMU." />
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- SCROLLER -->
+        <script src="js/jquery.li-scroller.1.0.js"></script>
+
+        <ul id="demo">
+            <li>
+                <span></span><a href="#">— BROADCASTING NOW. LIVE ON THE WEB.
+      FRESH TO YOUR HEAD. 105.5 FM WLPN. LUMPEN RADIO 2017 —</a>
+            </li>
+        </ul>
+        <!-- L SIDEBAR -->
+        <script src="js/script.js"></script>
+        <div class="leftsb" id="lsb">
+            <a class="js-ajaxLink" href="index.html" data-target="/index2.html" data-title="WLPN // Lumpen Radio"><img src="graphics/wlpn.png"></a>
+        </div>
+        <nav id="nav01">
+            <!--FIX!-->
+            <div class="menu-icon"></div>
+        </nav>
+        <div class="leftsidebar"><img src="graphics/sbleft.png" width="190" height="auto"></div>
+        <!-- TOP BANNER -->
+        <div class="sprites-top"></div>
+        <!-- PLAYER-->
+        <div class="audio-player">
+            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+            <div id="jp_container_1" class="jp-audio">
+                <div class="jp-type-single">
+                    <script language="javascript" type="text/javascript" src="http://cent2.serverhostingcenter.com:2199/system/streaminfo.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            $("#jquery_jplayer_1").jPlayer({
+                                ready: function() {
+                                    $(this).jPlayer("setMedia", {
+                                        title: "Public Media Institute",
+                                        mp3: "http://50.7.99.155:7416/;stream/1"
+                                    });
+                                },
+                                swfPath: "/js",
+                                supplied: "mp3,oga"
+                            });
+                        });
+                    </script>
+                    <div class="jp-gui jp-interface">
+                        <ul class="jp-controls">
+                            <li>
+                                <a href="javascript:;" class="jp-play" tabindex="1" title="play">
+                                    <font size="4.5">&#61515;</font>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="jp-pause" tabindex="1" title="pause">
+                                    <font size="4.5">&#61516;</font>
+                                </a>
+                            </li>
+
+                            <li></li>
+                            <br>
+                            <li>
+                                <a href="javascript:;" class="jp-mute" tabindex="1" title="mute">
+                                    <font size="3">&#xf001;</font>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute" onMouseOver="&#xf00d;">
+                                    <font size="3">&#xf00d;</font>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="jp-play-bar"></div>
+                        <div class="jp-time-holder"> </div>
+                        <!--  <div class="jp-volume-bar">
+<div class="jp-volume-bar-value"></div>
+</div> UNDER CONSTRUCTION &#xf026; mute-->
+                        <div class="jp-no-solution"> <span>Update Required</span> To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>. </div>
+                    </div>
+                    <h1>NOW PLAYING <i class="fa fa-caret-right"></i> <span id="cc_strinfo_summary_qkxsrftg" title="download stream" class="cc_streaminfo">Loading ... </span> <a href="JavaScript:newPopup('http://www.lumpenradio.com/player.html');"><i class="fa fa-external-link" title="popout"></i></a></h1><br><br>
+                    <script type="text/javascript">
+                        // Popup window code
+                        function newPopup(url) {
+                            popupWindow = window.open(
+                                url, 'popUpWindow', 'height=700,width=703,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+                        }
+                    </script>
+                </div>
+                <script language="javascript" type="text/javascript" src="http://cent2.serverhostingcenter.com:2199/system/streaminfo.js"></script>
+            </div>
+        </div>
+
+        <!-- START BODY POST -->
+        <script src="js/script.js"></script>
+        <div class="post-container">
+            <div class="post">
+                <script type="text/javascript">
+                    ! function() {
+                        var analytics = window.analytics = window.analytics || [];
+                        if (!analytics.initialize)
+                            if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+                            else {
+                                analytics.invoked = !0;
+                                analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "group", "track", "ready", "alias", "page", "once", "off", "on"];
+                                analytics.factory = function(t) {
+                                    return function() {
+                                        var e = Array.prototype.slice.call(arguments);
+                                        e.unshift(t);
+                                        analytics.push(e);
+                                        return analytics
+                                    }
+                                };
+                                for (var t = 0; t < analytics.methods.length; t++) {
+                                    var e = analytics.methods[t];
+                                    analytics[e] = analytics.factory(e)
+                                }
+                                analytics.load = function(t) {
+                                    var e = document.createElement("script");
+                                    e.type = "text/javascript";
+                                    e.async = !0;
+                                    e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                                    var n = document.getElementsByTagName("script")[0];
+                                    n.parentNode.insertBefore(e, n)
+                                };
+                                analytics.SNIPPET_VERSION = "3.0.1";
+                                analytics.load("QiFQBV5tcDiI0hAbvbw5ka7LIKOJGnYg");
+                                analytics.page()
+                            }
+                    }();
+                </script>
+                <div class="smicons">
+                    <h3><a href="https://twitter.com/lumpenradio" target="_blank"><i class="fa fa-twitter fa-2x icon-sm"></i></a>  <a href="https://www.facebook.com/lumpenradio" target="_blank"><i class="fa fa-facebook-official fa-2x icon-sm"></i></a>  <a href="https://vimeo.com/lumpen" target="_blank"><i class="fa fa-vimeo fa-2x icon-sm"></i></a>
+<a href="https://www.mixcloud.com/lumpenradio/" target="_blank"><i class="fa fa-mixcloud fa-2x icon-sm"></i></a>  <a href="https://instagram.com/lumpenradio" target="_blank"><i class="fa fa-instagram fa-2x icon-sm"></i></a> <a href="https://soundcloud.com/lumpenradio" target="_blank"><i class="fa fa-soundcloud fa-2x icon-sm"></i></a> </h3></div>
+                <br> <img src="https://s3-us-west-2.amazonaws.com/s.lumpen.com/inbox.lumpen.com/belairpresents/belair.png" width="500" height="auto">
+                <br>
+                <br>
+                <p>
+                    <h2>Todd Carter / bel_Air Presents </h2><br>
+
+                    <h1>Bio:</h1> Todd Carter is an audio engineer/producer/composer/dj Also a member of electroacoustic improv trio TV Pow.
+                    <br><br>
+                    <h1>bel_Air Presents:</h1> Music from Chicago and beyond. A variety of studio and live musical tracks with the occasional special guest.
+                    <br>
+                    <br><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-02-02-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-02-16-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-02-23-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-03-01-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-03-08-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-03-15-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-03-22-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-04-12-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-05-03-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-05-31-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-06-21-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-03-29-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-05-10-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-05-17-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+                    <iframe width="99%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Flumpenradio%2Fbel_air-presents-todd-carter-05-03-2016%2F&hide_cover=1&mini=1&hide_artwork=1&light=1" frameborder="0"></iframe><br>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- END BODY POST -->
+
+    <!-- R SIDEBAR -->
+    <div class="sb-containertop" id="sblinks">
+        <div class="donate"><a class="js-ajaxLink" href="/donate.html" data-target="/donate2.html" data-title="WLPN // Donate">Donate <i class="fa fa-caret-right" style="color: white;"></i></a></div>
+        <div class="sb"><a class="js-ajaxLink" href="/mailinglist.html" data-target="/mailinglist2.html" data-title="WLPN // Mailing List">Mailing List</a></div>
+        <div class="sb"><a class="js-ajaxLink" href="/info.html" data-target="/info2.html" data-title="WLPN // Press / Info">Press/info<i class="fa fa-caret-right" style="color: black;"></i> </a></div>
+    </div>
+    <div class="sidebar">
+        <div class="sbimg1"><img src="graphics/mc1.png" width="200" height="auto" padding="5px"></div>
+        <div class="sbpost">
+            <h3>TESTIMONIALS:</h3>
+            <p>“Sweet.” <br> – Joe Collier <br>
+                <br> “Too cool."
+                <i class="fa fa-thumbs-o-up fa-lg icon-sm"></i> <br> – Al Ribskis <br>
+                <br> "Yes!!!" <br> – Scott Marvel <br>
+                <br> “Awesome!” <br> – Ethan M. D’Ercole <br>
+                <br> “Sweet” <br> – Nick Depeder </p>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="colo">
+        <h3><a href="https://tlk.io/wlpn" target="_blank"><i class="fa fa-comment fa-lg icon-sm" title="lumpen radio chat"></i></a>  PMI–2017</h3></div>
+    <div class="footer"><img src="graphics/footer.png" width="50" height="auto"></div>
+
+
+    <script type="text/javascript">
+        $(function() {
+            $('#audio-player').mediaelementplayer({
+                alwaysShowControls: true,
+                features: ['playpause', 'progress', 'volume'],
+                audioVolume: 'horizontal',
+                audioWidth: 450,
+                audioHeight: 70,
+                iPadUseNativeControls: true,
+                iPhoneUseNativeControls: true,
+                AndroidUseNativeControls: true
+            });
+        });
+    </script>
+</body>
+
+</html>

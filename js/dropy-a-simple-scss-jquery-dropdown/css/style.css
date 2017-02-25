@@ -1,0 +1,106 @@
+/* Variables */
+/* Colors */
+/* Common style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier', monospace;
+  color: #4d4d4d;
+  letter-spacing: 4.5px;
+}
+
+h1 {
+  font-family: 'Playball', cursive;
+  font-size: 6em;
+  font-weight: 700;
+  text-align: center;
+  color: #3F73AC;
+  margin: 0.25em 0;
+}
+
+h2 {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+main {
+  background: #333;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+main a {
+  color: #e75854;
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+}
+main a:hover {
+  color: #fafafa;
+}
+
+/* Dropdown style */
+.dropdown {
+  width: 15em;
+  margin: 0 auto;
+  letter-spacing: 4.5px;
+  margin-bottom: 1em;
+}
+.dropdown dt a {
+  display: block;
+  height: 2.5em;
+  width: 100%;
+  border: 1px solid #ecf0f1;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.dropdown dt a:hover, .dropdown dt a:active {
+  border-color: #bdc3c7;
+}
+.dropdown dt span {
+  display: block;
+  padding: 0 1em;
+  line-height: 2.5em;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHo+AACAQQAA+MoAAIC0AAB48QAA9RwAADw3AAAbzhlfIT4AAACJSURBVHjajNAxCsJAEEbhb5cU4i0sbHIaL6IQTxFPo4VeROwXQs4gKW1cWJZEM90wj5l5f0jDeMXBunqENIw7vLD9A09oIxL6FdsvSCENI2zwxH4BTmgxxeJc92P76cuIpRBuc6K45yZWwzPeleixBOLMr30tWgJZuqwcQJNFy2GzkHeHUMPwGQChFSPmzlJ1WgAAAABJRU5ErkJggg==) no-repeat scroll right center;
+  border-right: 1em solid transparent;
+  cursor: pointer;
+}
+.dropdown dd {
+  position: relative;
+}
+.dropdown dd ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: -2.5em;
+  width: 100%;
+  list-style: none;
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #bdc3c7;
+  border-radius: 3px;
+}
+.dropdown dd ul li:first-child a:hover {
+  border-radius: 3px 3px 0 0;
+}
+.dropdown dd ul li:last-child a:hover {
+  border-radius: 0 0 3px 3px;
+}
+.dropdown dd li a {
+  display: block;
+  padding: 0 1em;
+  line-height: 2.5em;
+  text-decoration: none;
+}
+.dropdown dd li a:hover {
+  background-color: #3F73AC;
+  color: #fff;
+  cursor: pointer;
+}
+
+.selected {
+  font-weight: 700;
+}
