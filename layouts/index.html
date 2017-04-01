@@ -1,0 +1,5 @@
+{{ define "main" }}
+  {{ range where .Site.Pages "Section" "post" }}
+    {{ .Render "single" }}
+  {{ end }}
+{{ end }}
