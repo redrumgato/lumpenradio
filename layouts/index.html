@@ -1,5 +1,7 @@
-{{ define "main" }}
-  {{ range where .Site.Pages "Section" "post" }}
-    {{ .Render "single" }}
-  {{ end }}
-{{ end }}
+{{ define "title" }}Live{{ end }}
+
+{{ define "main" -}}
+  {{- range where .Site.Pages "Section" "post" -}}
+    {{- .Render "single" -}}
+  {{- end -}}
+{{- end }}
