@@ -1,0 +1,15 @@
+<section>
+  <header>corner logo here</header>
+  <nav>
+    <ul class="menu">
+      {{ $thisPage := . }}
+      {{ $type := .Page.Type }}
+
+      {{ range .Site.Menus.main }}
+        <li class="menu__menu-item{{ if or ($thisPage.IsMenuCurrent "main" .) (eq (lower $type) (lower .Name)) }} menu__menu-item--active{{ end }}">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</section>

@@ -1,0 +1,10 @@
+{{ define "title" }}About{{ end }}
+
+{{ define "main" }}
+  {{ with index .Data.Pages 0 }}
+    <h1>{{ .Title }}</h1>
+    <div>
+      <p>{{ .Content }}</p>
+    </div>
+  {{ end }}
+{{ end }}

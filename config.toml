@@ -1,3 +1,28 @@
 baseURL = "http://lumpenradio.com/"
 languageCode = "en-us"
 title = "Lumpen Radio"
+
+[[menu.main]]
+  weight = "-110"
+  name = "Live"
+  url = "/"
+[[menu.main]]
+  weight = "-109"
+  name = "Schedule"
+  url = "/schedule"
+[[menu.main]]
+  weight = "-108"
+  name = "Shows"
+  url = "/show"
+[[menu.main]]
+  weight = "-107"
+  name = "About"
+  url = "/about"
+[[menu.main]]
+  weight = "-106"
+  name = "Sponsor"
+  url = "/sponsor"
+[[menu.main]]
+  weight = "-105"
+  name = "Swag"
+  url = "/swag"

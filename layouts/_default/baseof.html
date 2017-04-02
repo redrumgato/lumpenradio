@@ -3,15 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title>WLPN // {{ block "title" . -}}{{- end }}</title>
-  {{ partial "meta" -}}
-  {{ partial "favicon" -}}
+  <title>WLPN // {{ block "title" . }}{{ end }}</title>
+  {{ partial "meta" . -}}
+  {{ partial "favicon" . -}}
   <link href="/css/app.css" rel="stylesheet">
 </head>
 
 <body lang="en">
-  {{ block "main" . -}}
-  {{- end }}
+  {{ partial "header" . -}}
+  {{ partial "menu" . -}}
+  {{ block "main" . }}{{ end -}}
+  {{ partial "footer" . -}}
   <script type="text/javascript" src="/js/app.js"></script>
 </body>
 
