@@ -1,0 +1,7 @@
+{{ define "title" }}{{ (index .Data.Pages 0).Title }}{{ end }}
+
+{{ define "main" }}
+  {{ with index .Data.Pages 0 }}
+    {{ .Render "single" }}
+  {{ end }}
+{{ end }}
