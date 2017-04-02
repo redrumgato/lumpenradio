@@ -4,5 +4,5 @@ require("Styles/main.scss");
 
 var Pjax = require("pjax");
 
-//new Pjax({ selectors: [".someclass", "#someid", "sometag", "etc."] });
+new Pjax({ selectors: ["title", "main", ".menu"] });
 

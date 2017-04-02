@@ -12,7 +12,9 @@
 <body lang="en">
   {{ partial "header" . -}}
   {{ partial "menu" . -}}
-  {{ block "main" . }}{{ end -}}
+  <main>
+    {{ block "main" . }}{{ end -}}
+  </main>
   {{ partial "footer" . -}}
   <script type="text/javascript" src="/js/app.js"></script>
 </body>
