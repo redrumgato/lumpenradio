@@ -1,3 +1,5 @@
+@include normalize();
+
 $base-font-stack: Open Sans, sans-serif;
 
 @import "modules/all";
