@@ -4,12 +4,11 @@
   "description": "Low Power to the People!",
   "main": "public/index.html",
   "scripts": {
-    "build": "webpack && hugo",
-    "build:debug": "webpack --env.debug && hugo",
-    "build:netlify": "webpack && hugo_0.19",
+    "build": "webpack --env.prod && hugo",
+    "build:netlify": "webpack --env.prod && hugo_0.19",
     "watch": "webpack --watch & hugo serve",
-    "watch:debug": "webpack --watch --env.debug & hugo serve",
-    "start": "npm run watch"
+    "start": "npm run watch",
+    "stop": "ps aux | grep -E 'hugo|webpack' | grep -v grep | awk '{print $2}' | xargs kill 2> /dev/null || echo 'Nothing to stop.'"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,6 @@
   "author": "Lumpens",
   "license": "ISC",
   "devDependencies": {
-    "breakpoint-sass": "^2.7.1",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "node-sass": "^4.5.2",

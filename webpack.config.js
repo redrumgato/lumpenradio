@@ -2,7 +2,7 @@ var path = require("path");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = function(env) {
-  env = env || { prod: true };
+  env = env || { dev: true };
   return {
     context: path.resolve(__dirname),
     entry: "./js/index.js",
@@ -17,7 +17,7 @@ module.exports = function(env) {
             use: [
               {
                 loader: "css-loader",
-                options: { minimize: !env.debug }
+                options: { minimize: env.prod }
               },
               "postcss-loader",
               "sass-loader"
