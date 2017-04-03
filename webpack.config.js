@@ -1,5 +1,6 @@
 var path = require("path");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var webpack = require('webpack');
 
 module.exports = function(env) {
   env = env || { dev: true };
@@ -36,6 +37,9 @@ module.exports = function(env) {
         filename: "static/css/app.css",
         allChunks: true
       })
-    ]
+    ].concat(!env.prod ? [] : [
+      new webpack.optimize.OccurrenceOrderPlugin(),
+      new webpack.optimize.UglifyJsPlugin()
+    ])
   }
 }
