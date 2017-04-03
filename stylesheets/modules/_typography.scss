@@ -1,0 +1,8 @@
+/* eot, svg, woff, and ttf are missing. Only otf works for now. */
+
+@font-face {
+  font-family: Akkurat Mono;
+  src: url("/fonts/AkkuratMono.otf") format("opentype"), url("/fonts/AkkurateMonoMono.eot") format("eot"), url("/fonts/AkkuratMonoMono.svg") format("svg"), url("/fonts/akkurat-mono.woff") format("woff"), url("/fonts/akkurat-mono.tff") format("truetype")
+}
+
+$base-font-family: Akkurat Mono, Courier New, Courier, monospace;;
