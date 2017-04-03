@@ -1,47 +1,60 @@
-$row-height: 4rem;
+$header-row-height: 3.5rem;
+$header-border: 2px solid $brand-color;
+$header-margin-size: 0.25rem;
+$header-gap-size: 0.5rem;
 
 header {
-  @include container;
+  background-color: white;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 999;
-  margin-right: $side-margin;
+  padding: 0 $global-margin-size;
+  width: 100%;
 }
 
-.header-row {
-  @include container;
+.container {
+  margin-bottom: $header-margin-size;
+}
+
+.top-row {
+  margin-top: $header-margin-size;
+  height: $header-row-height;
+  display: flex;
 
   &__banner {
-    @include span(10);
-    height: $row-height;
+    border-bottom: $header-border;
+    height: $header-row-height;
     display: flex;
 
     img {
-      @include span(12);
       margin: auto;
+      margin-left: 0;
+      max-height: $header-row-height - $header-margin-size * 2;
+      max-width: 100%;
     }
+  }
+
+  &__spanner {
+    flex-grow: 1;
+    border-bottom: $header-border;
+  }
+
+  &__gap {
+    width: $header-gap-size;
+    border-right: $header-border;
+    flex-shrink: 0;
   }
 
   &__hamburger {
-    @include span(last 2);
     color: $brand-color;
-    height: $row-height;
     display: flex;
+    height: $header-row-height;
+    margin-left: $header-gap-size;
+    border-bottom: $header-border;
 
     i {
       margin: auto;
-    }
-  }
-
-  &.player {
-    @include span(12);
-
-    padding: 0.75rem;
-    background: repeating-linear-gradient(-45deg, white, white 10px, $brand-color 10px, $brand-color 20px);
-
-    .player__player-content {
-      padding: 0.75rem;
-      background: white;
     }
   }
 }
