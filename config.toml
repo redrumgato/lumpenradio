@@ -26,3 +26,11 @@ title = "Lumpen Radio"
   weight = "-105"
   name = "Swag"
   url = "/swag"
+[[menu.main]]
+  weight = "-104"
+  name = "Newsletter"
+  url = "/newsletter"
+[[menu.main]]
+  weight = "-103"
+  name = "Support"
+  url = "/support"

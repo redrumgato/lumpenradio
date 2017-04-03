@@ -5,7 +5,8 @@
       {{ $type := .Page.Type }}
 
       {{ range .Site.Menus.main }}
-        <li class="menu__menu-item{{ if or ($thisPage.IsMenuCurrent "main" .) (eq (lower $type) (lower .Name)) }} menu__menu-item--active{{ end }}">
+        {{ $showActive := or ($thisPage.IsMenuCurrent "main" .) (eq (lower $type) (lower .Name)) }}
+        <li class="menu__menu-item {{ lower .Name }}{{ if $showActive }} menu__menu-item--active{{ end }}">
           <a href="{{ .URL }}">{{ .Name }}</a>
         </li>
       {{ end }}

@@ -1,0 +1,47 @@
+$row-height: 4rem;
+
+header {
+  @include container;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  margin-right: $side-margin;
+}
+
+.header-row {
+  @include container;
+
+  &__banner {
+    @include span(10);
+    height: $row-height;
+    display: flex;
+
+    img {
+      @include span(12);
+      margin: auto;
+    }
+  }
+
+  &__hamburger {
+    @include span(last 2);
+    color: $brand-color;
+    height: $row-height;
+    display: flex;
+
+    i {
+      margin: auto;
+    }
+  }
+
+  &.player {
+    @include span(12);
+
+    padding: 0.75rem;
+    background: repeating-linear-gradient(-45deg, white, white 10px, $brand-color 10px, $brand-color 20px);
+
+    .player__player-content {
+      padding: 0.75rem;
+      background: white;
+    }
+  }
+}
