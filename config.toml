@@ -1,4 +1,4 @@
-baseURL = "http://lumpenradio.com/"
+baseURL = "https://lumpenradio-prototype.netlify.com/"
 languageCode = "en-us"
 title = "Lumpen Radio"
 

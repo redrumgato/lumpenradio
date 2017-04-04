@@ -8,12 +8,8 @@ header {
   width: 100%;
 }
 
-.container {
-  margin-bottom: $header-margin-size;
-}
-
 .top-row {
-  margin-top: $header-margin-size;
+  margin: $header-margin-size auto;
   height: $header-row-height;
   display: flex;
 
