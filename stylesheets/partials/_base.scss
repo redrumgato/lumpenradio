@@ -12,6 +12,8 @@ $global-margin-size: 0.5rem;
 
 @import "modules/all";
 
+$border: 2px solid $brand-color;
+
 /* eot, svg, woff, and ttf are missing. Only otf works for now. */
 
 @font-face {

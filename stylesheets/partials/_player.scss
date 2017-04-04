@@ -1,13 +1,12 @@
-$player-padding: 0.75rem;
-
 .player {
-  max-width: span(12);
+  max-width: 100%;
 
   padding: $player-padding;
   background: repeating-linear-gradient(-45deg, white, white 8px, $brand-color 8px, $brand-color 18px);
 
   &__player-content {
-    padding: $player-padding;
+    padding: $player-inner-padding;
     background: white;
+    height: $player-content-height;
   }
 }

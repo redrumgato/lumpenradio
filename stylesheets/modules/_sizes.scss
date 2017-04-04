@@ -1,0 +1,12 @@
+$footer-height: 3rem;
+
+$header-row-height: 3.5rem;
+$header-margin-size: 0.25rem;
+$header-gap-size: 0.5625rem;
+
+$player-inner-padding: 0.5rem;
+$player-padding: 0.75rem;
+$player-content-height: 5rem;
+$player-height: $player-content-height + 2 * $player-padding;
+
+$header-height: $header-row-height + 3 * $header-margin-size + $player-height;

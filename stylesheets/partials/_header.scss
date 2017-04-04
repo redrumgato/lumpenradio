@@ -1,8 +1,3 @@
-$header-row-height: 3.5rem;
-$header-border: 2px solid $brand-color;
-$header-margin-size: 0.25rem;
-$header-gap-size: 0.5rem;
-
 header {
   background-color: white;
   position: fixed;
@@ -23,7 +18,7 @@ header {
   display: flex;
 
   &__banner {
-    border-bottom: $header-border;
+    border-bottom: $border;
     height: $header-row-height;
     display: flex;
 
@@ -37,12 +32,12 @@ header {
 
   &__spanner {
     flex-grow: 1;
-    border-bottom: $header-border;
+    border-bottom: $border;
   }
 
   &__gap {
     width: $header-gap-size;
-    border-right: $header-border;
+    border-right: $border;
     flex-shrink: 0;
   }
 
@@ -50,8 +45,8 @@ header {
     color: $brand-color;
     display: flex;
     height: $header-row-height;
-    margin-left: $header-gap-size;
-    border-bottom: $header-border;
+    margin-left: $header-margin-size * 2;;
+    border-bottom: $border;
 
     i {
       margin: auto;
