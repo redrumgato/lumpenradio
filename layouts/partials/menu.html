@@ -2,7 +2,7 @@
   <nav>
     <ul class="menu">
       {{ $thisPage := . }}
-      {{ $type := .Page.Type }}
+      {{ $type := .Type }}
 
       {{ range .Site.Menus.main }}
         {{ $showActive := or ($thisPage.IsMenuCurrent "main" .) (eq (lower $type) (lower .Name)) }}
