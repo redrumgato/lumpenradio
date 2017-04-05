@@ -1,13 +1,18 @@
 <section class="menu">
-  <div class="menu__close">
-    <span class="menu__close-button">&times;</span>
+  <div class="menu__top">
+    <div class="menu__close">
+      <span class="menu__close-button">&times;</span>
+    </div>
+    <div class="menu__logo">
+      <a href="/"><img src="/img/LumpenRadio_banner.png"></img></a>
+    </div>
   </div>
   <nav>
     <ul class="menu__list">
       {{ $thisPage := . }}
       {{ $type := .Type }}
 
-      {{ range .Site.Menus.main }}
+      {{ range after 1 .Site.Menus.main }}
         {{ $showActive := or ($thisPage.IsMenuCurrent "main" .) (eq (lower $type) (lower .Name)) }}
         <li class="menu__item {{ lower .Name }}{{ if $showActive }} menu__item--active{{ end }}">
           <a href="{{ .URL }}">{{ .Name }}</a>
@@ -16,8 +21,10 @@
     </ul>
   </nav>
   <div class="social-row">
-    <i class="fa fa-facebook fa-2x"></i>
-    <i class="fa fa-twitter fa-2x"></i>
-    <i class="fa fa-instagram fa-2x"></i>
+    <div class="social-row__container">
+      <a><i class="fa fa-facebook fa-2x"></i></a>
+      <a><i class="fa fa-twitter fa-2x"></i></a>
+      <a><i class="fa fa-instagram fa-2x"></i></a>
+    </div>
   </div>
 </section>

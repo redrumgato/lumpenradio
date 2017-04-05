@@ -16,6 +16,7 @@ header {
   &__banner {
     border-bottom: $border;
     height: $header-row-height;
+    width: 100%;
     display: flex;
 
     img {
