@@ -8,10 +8,14 @@ var $ = require("jquery");
 new Pjax({ selectors: ["title", "main", ".menu__list"] });
 
 $(function() {
+  var $body = $("body");
+  var bodyScrollPosition;
   var menuToggleOnClick = function(selector, show) {
     $(selector).click(function() {
+      show && (bodyScrollPosition = $body.scrollTop());
       $(".menu").toggle(show);
-      $("body").css("overflow", show ? "hidden" : "inherit");
+      $body.css("position", show ? "fixed" : "static");
+      show || $body.scrollTop(bodyScrollPosition);
     });
   };
 
