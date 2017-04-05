@@ -19,6 +19,7 @@ $(function() {
   menuToggleOnClick(".menu__close-button, .menu__item a", false);
 
   $(document).on('pjax:complete', function() {
+    $("main").css("overflow-wrap", "break-word");
     menuToggleOnClick(".menu__item a", false);
   });
 });
