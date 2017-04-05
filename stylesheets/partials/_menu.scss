@@ -1,3 +1,28 @@
 .menu {
   display: none;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+
+  &__close {
+    color: $brand-color;
+    height: 4rem;
+    font-size: 4rem;
+    width: 100%;
+    text-align: right;
+
+    &-button {
+      padding: 0 $global-margin-size;
+    }
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
 }

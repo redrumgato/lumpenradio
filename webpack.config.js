@@ -40,6 +40,9 @@ module.exports = function(env) {
     ].concat(!env.prod ? [] : [
       new webpack.optimize.OccurrenceOrderPlugin(),
       new webpack.optimize.UglifyJsPlugin()
-    ])
+    ]),
+    externals: {
+      jquery: "jQuery"
+    }
   }
 }
