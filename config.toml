@@ -13,7 +13,7 @@ title = "Lumpen Radio"
 [[menu.main]]
   weight = "-108"
   name = "Shows"
-  url = "/show"
+  url = "/shows"
 [[menu.main]]
   weight = "-107"
   name = "About"

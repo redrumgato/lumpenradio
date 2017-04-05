@@ -1,0 +1,9 @@
+{{ define "title" }}Shows{{ end }}
+
+{{ define "main" }}
+  <div class="shows">
+    {{ range .Data.Pages.Reverse }}
+      {{ .Render "thumbnail" }}
+    {{ end }}
+  </div>
+{{ end }}
