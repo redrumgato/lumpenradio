@@ -1,0 +1,38 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: $footer-height;
+  background-color: $brand-color;
+
+  .button-bar {
+    margin: auto;
+    height: $footer-height;
+    display: flex;
+    align-items: center;
+    padding-left: $footer-padding;
+
+    span {
+      margin-right: $footer-margin-size * 2;
+      display: flex;
+      align-items: center;
+      height: $footer-height;
+
+      a {
+        color: white;
+      }
+
+    }
+
+    .button {
+      a {
+        padding: $link-padding;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "~susy/sass/susy";
+@import "node_modules/normalize-scss/sass/normalize";
+
+// Modules and variables
+@import "partials/base";
+
+// Partials
+@import "partials/header";
+@import "partials/player";
+@import "partials/main";
+@import "partials/footer";
+@import "partials/menu";

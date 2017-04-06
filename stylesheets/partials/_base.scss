@@ -1,0 +1,32 @@
+@include normalize();
+
+$susy: (
+  columns: 12,
+  global-box-sizing: border-box,
+  debug: (
+    image: hide
+  )
+);
+
+$global-margin-size: 0.5rem;
+
+@import "modules/all";
+
+$border: 2px solid $brand-color;
+
+/* eot, svg, woff, and ttf are missing. Only otf works for now. */
+
+@font-face {
+  font-family: Akkurat Mono;
+  src: url("/fonts/AkkuratMono.otf") format("opentype"), url("/fonts/AkkurateMonoMono.eot") format("eot"), url("/fonts/AkkuratMonoMono.svg") format("svg"), url("/fonts/akkurat-mono.woff") format("woff"), url("/fonts/akkurat-mono.tff") format("truetype")
+}
+
+body {
+  @include layout($susy);
+  @include container($susy);
+  @include border-box-sizing;
+
+  font-family: $base-font-family;
+  margin: auto $global-margin-size;
+  overflow-wrap: break-word;
+}
