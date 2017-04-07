@@ -11,28 +11,56 @@ footer {
     height: $footer-height;
     display: flex;
     align-items: center;
-    padding-left: $footer-padding;
+    padding: $footer-padding;
+    justify-content: space-between;
 
     span {
-      margin-right: $footer-margin-size * 2;
       display: flex;
       align-items: center;
-      height: $footer-height;
+      margin-right: $footer-margin-size;
 
       a {
         color: white;
       }
-
     }
 
-    .button {
-      a {
-        padding: $link-padding;
-        text-decoration: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
+    .spacer { flex-grow: 1; }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+
+      .button {
+        padding: $footer-padding;
+        background: white;
+
+        a {
+          color: $brand-color;
+          padding: $link-padding;
+          text-decoration: none;
+          font-size: $footer-button-font-size;;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: $footer-button-spacing;
+        }
+
+        &.newsletter {
+          padding: $footer-button-padding;
+          background: $brand-color;
+          border: $footer-button-border;
+
+          a {
+            color: white;
+          }
+        }
       }
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: $footer-social-width;
     }
   }
 }
