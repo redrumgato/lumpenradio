@@ -6,7 +6,7 @@ footer {
   height: $footer-height;
   background-color: $brand-color;
 
-  .button-bar {
+  .bottom-bar {
     margin: auto;
     height: $footer-height;
     display: flex;
@@ -18,49 +18,50 @@ footer {
       display: flex;
       align-items: center;
       margin-right: $footer-margin-size;
-
-      a {
-        color: white;
-      }
     }
 
-    .spacer { flex-grow: 1; }
+    &__spacer { flex-grow: 1; }
 
-    .buttons {
+    &__buttons {
       display: flex;
       align-items: center;
+    }
 
-      .button {
-        padding: $footer-padding;
-        background: white;
+    &__button {
+      padding: $footer-padding;
+      background: white;
+
+      a {
+        color: $brand-color;
+        padding: $link-padding;
+        text-decoration: none;
+        font-size: $footer-button-font-size;;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: $footer-button-spacing;
+      }
+
+      &.newsletter {
+        padding: $footer-button-padding;
+        background: $brand-color;
+        border: $footer-button-border;
 
         a {
-          color: $brand-color;
-          padding: $link-padding;
-          text-decoration: none;
-          font-size: $footer-button-font-size;;
-          font-weight: bold;
-          text-transform: uppercase;
-          letter-spacing: $footer-button-spacing;
-        }
-
-        &.newsletter {
-          padding: $footer-button-padding;
-          background: $brand-color;
-          border: $footer-button-border;
-
-          a {
-            color: white;
-          }
+          color: white;
         }
       }
     }
 
-    .social {
+
+    &__social {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: $footer-social-width;
+
+      a {
+        color: white;
+      }
     }
   }
 }
