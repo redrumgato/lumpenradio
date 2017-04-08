@@ -4,7 +4,7 @@ title = "About"
 
 +++
 
-![](graphics/aboutusplaceholder.jpg)
+![]()
 
 ### About Us
 
@@ -20,7 +20,7 @@ This program is partially supported by a grant from the Illinois Arts Council Ag
 Public Media Institute  
 960 W 31st St  
 Chicago Il 60608  
-<span class="obfuscate">info@<span>null</span>lumpenradio.com</span>  
+info@lumpenradio.com  
 (773)823-9700  
 
 ### STAFF
