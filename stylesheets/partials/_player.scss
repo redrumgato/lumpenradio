@@ -9,5 +9,9 @@
     padding: $player-inner-padding;
     background: white;
     height: $player-content-height;
+
+    #pause-button {
+      display: none;
+    }
   }
 }

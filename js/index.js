@@ -4,6 +4,7 @@ require("Styles/main.scss");
 
 var Pjax = require("pjax");
 var $ = require("jquery");
+var Howler = require("howler");
 
 new Pjax({ selectors: ["title", "main", ".menu__list"] });
 
@@ -24,5 +25,25 @@ $(function() {
 
   $(document).on('pjax:complete', function() {
     menuToggleOnClick(".menu__item a", false);
+  });
+
+  var stream = new Howler.Howl({
+    src: [ "http://stream.lumpen.fm:7416/;stream/1" ],
+    format: "mp3"
+  });
+
+  var $play = $("#play-button");
+  var $pause = $("#pause-button");
+
+  $(".player__play-pause").click(function(event) {
+    if(stream.playing()) {
+      $pause.hide();
+      $play.show();
+      stream.pause();
+    } else {
+      $play.hide();
+      $pause.show();
+      stream.play();
+    }
   });
 });
