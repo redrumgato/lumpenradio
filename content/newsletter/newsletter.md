@@ -4,7 +4,7 @@ title = "newsletter"
 
 +++
 
-![](graphics/ml.png)
+![]()
 
 ### Mailing list
 
