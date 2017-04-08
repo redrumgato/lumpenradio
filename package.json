@@ -9,7 +9,7 @@
     "watch": "webpack --watch & hugo serve",
     "start": "npm run watch",
     "stop": "ps aux | grep -E 'hugo|webpack' | grep -v grep | awk '{print $2}' | xargs kill 2> /dev/null || echo 'Nothing to stop.'",
-    "server": "npm run build && http-server public"
+    "server": "npm run build && http-server -c-1 -p 1313 public"
   },
   "repository": {
     "type": "git",

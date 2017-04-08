@@ -27,13 +27,16 @@ $(function() {
     menuToggleOnClick(".menu__item a", false);
   });
 
-  var stream = new Howler.Howl({
-    src: [ "http://stream.lumpen.fm:7416/;stream/1" ],
-    format: "mp3"
-  });
-
   var $play = $("#play-button");
   var $pause = $("#pause-button");
+
+  Howler.Howler.unload();
+
+  var stream = new Howler.Howl({
+      src: "http://stream.lumpen.fm:7416/;stream/1",
+      format: "mp3",
+      html5: true
+  });
 
   $(".player__play-pause").click(function(event) {
     if(stream.playing()) {
