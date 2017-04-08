@@ -6,8 +6,8 @@
   <title>WLPN // {{ block "title" . }}{{ end }}</title>
   {{ partial "meta" . -}}
   {{ partial "favicon" . -}}
-  <link rel="stylesheet" href="/css/app.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[0].replace("../../static", "") %>"></link>
 </head>
 
 <body lang="en">
@@ -18,7 +18,7 @@
   </main>
   {{ partial "footer" . -}}
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script type="text/javascript" src="/js/app.js"></script>
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[0].replace("../../static", "") %>"></script>
 </body>
 
 </html>
