@@ -22,7 +22,7 @@ header {
     img {
       margin: auto;
       margin-left: 0;
-      max-height: $header-row-height - $header-margin-size * 2;
+      height: $header-row-height - $header-margin-size * 2;
       max-width: 100%;
     }
   }
