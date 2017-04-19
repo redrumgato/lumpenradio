@@ -86,8 +86,14 @@
       justify-content: space-around;
       max-width: $menu-social-row-width;
 
-      a {
-        margin: auto;
+      span {
+        display: flex;
+        align-items: center;
+
+        a {
+          margin: auto;
+          color: black;
+        }
       }
     }
   }

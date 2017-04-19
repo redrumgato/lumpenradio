@@ -4,7 +4,7 @@
       <span class="menu__close-button">&times;</span>
     </div>
     <div class="menu__logo">
-      <a href="/"><img src="/img/LumpenRadio_Banner.svg"></img></a>
+      <a href="/" class="menu__link"><img src="/img/LumpenRadio_Banner.svg"></img></a>
     </div>
     <div class="menu__station-code">
       <img src="/img/LumpenRadio_105.svg"></img>
@@ -18,16 +18,14 @@
       {{ range after 1 .Site.Menus.main }}
         {{ $showActive := or ($thisPage.IsMenuCurrent "main" .) (eq (lower $type) (lower .Name)) }}
         <li class="menu__item {{ lower .Name }}{{ if $showActive }} menu__item--active{{ end }}">
-          <a href="{{ .URL }}">{{ .Name }}</a>
+          <a class="menu__link" href="{{ .URL }}">{{ .Name }}</a>
         </li>
       {{ end }}
     </ul>
   </nav>
   <div class="social-row">
     <div class="social-row__container">
-      <a><i class="fa fa-facebook fa-2x"></i></a>
-      <a><i class="fa fa-twitter fa-2x"></i></a>
-      <a><i class="fa fa-instagram fa-2x"></i></a>
+      {{ partial "social-buttons" . }}
     </div>
   </div>
 </section>

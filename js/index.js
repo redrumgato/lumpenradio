@@ -21,7 +21,7 @@ $(function() {
   };
 
   menuToggleOnClick(".top-row__hamburger", true);
-  menuToggleOnClick(".menu__close-button, .menu a", false);
+  menuToggleOnClick(".menu__close-button, .menu__link", false);
 
   $(document).on('pjax:complete', function() {
     menuToggleOnClick(".menu__item a", false);
