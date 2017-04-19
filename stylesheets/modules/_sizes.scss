@@ -2,10 +2,15 @@ $header-row-height: 3.5rem;
 $header-margin-size: .25rem;
 $header-gap-size: .5625rem;
 
-$player-inner-padding: .5rem;
+$player-content-padding: .5rem;
+$player-content-side-padding: $player-content-padding * 2;
 $player-padding: .75rem;
 $player-content-height: 5rem;
+$player-inner-height: $player-content-height - 2 * $player-content-padding;
 $player-height: $player-content-height + 2 * $player-padding;
+$player-logo-height: 2rem;
+$player-logo-font-size: .75rem;
+$player-buttons-width: 2.5rem;
 
 $header-height: $header-row-height + 3 * $header-margin-size + $player-height;
 

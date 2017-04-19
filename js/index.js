@@ -38,7 +38,7 @@ $(function() {
       html5: true
   });
 
-  $(".player__play-pause").click(function(event) {
+  $(".player__buttons").click(function(event) {
     if(stream.playing()) {
       $pause.hide();
       $play.show();
