@@ -22,3 +22,13 @@ $footer-social-width: 8rem;
 $link-padding: .25rem 0 0;
 
 $menu-border: dashed 1px black;
+$menu-close-button-height: 4rem;
+$menu-banner-height: 3rem;
+$menu-station-code-height: 2rem;
+$menu-item-height: 2.5rem;
+$menu-link-height: 1.5rem;
+$menu-item-padding-top: (($menu-item-height - $menu-link-height) / 2) - (2/16);
+$menu-banner-padding: 0 2.5rem .5rem;
+$menu-banner-margin: 0 auto auto;
+$menu-social-row-height: 6rem;
+$menu-social-row-width: 18rem;
