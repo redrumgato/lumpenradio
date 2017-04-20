@@ -6,7 +6,10 @@ var Pjax = require("pjax");
 var $ = require("jquery");
 var Howler = require("howler");
 
-new Pjax({ selectors: ["title", "main", ".menu__list"] });
+new Pjax({
+  elements: ["a"],
+  selectors: ["title", "main", ".menu__list"]
+});
 
 $(function() {
   var $body = $("body");
@@ -34,22 +37,22 @@ $(function() {
 
   console.log("creating stream");
   var stream = new Howler.Howl({
-      src: "http://stream.lumpen.fm:7416/;stream/1",
-      format: "mp3",
-      html5: true,
-      onload: function() {
-        console.log("stream loaded");
-      },
-      onloaderror: function(_, error) {
-        console.log("error:");
-        console.log(error);
-      },
-      onplay: function() {
-        console.log("playing");
-      },
-      onpause: function() {
-        console.log("pausing");
-      }
+    src: "http://stream.lumpen.fm:7416/;stream/1",
+    format: "mp3",
+    html5: true,
+    onload: function() {
+      console.log("stream loaded");
+    },
+    onloaderror: function(_, error) {
+      console.log("error:");
+      console.log(error);
+    },
+    onplay: function() {
+      console.log("playing");
+    },
+    onpause: function() {
+      console.log("pausing");
+    }
   });
 
   $(".player__buttons").click(function() {
