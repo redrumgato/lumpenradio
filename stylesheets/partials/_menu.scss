@@ -46,7 +46,6 @@
   }
 
   &__list {
-    flex-grow: 1;
     list-style-type: none;
     padding: 0;
     text-align: center;
@@ -62,7 +61,6 @@
     height: $menu-item-height;
     padding-top: $menu-item-padding-top;
     display: flex;
-    justify-content: space-around;
 
     a {
       color: black;
