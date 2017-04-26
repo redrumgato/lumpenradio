@@ -18,7 +18,7 @@
       {{ range after 1 .Site.Menus.main }}
         {{ $showActive := or ($thisPage.IsMenuCurrent "main" .) (eq (lower $type) (lower .Name)) }}
         <li class="menu__item {{ lower .Name }}{{ if $showActive }} menu__item--active{{ end }}">
-          <a class="menu__link" href="{{ .URL }}">{{ .Name }}</a>
+          <a class="menu__link" href="{{ .URL }}" {{ if hasPrefix .URL "http" }}target="_blank"{{ end }}>{{ .Name }}</a>
         </li>
       {{ end }}
     </ul>
