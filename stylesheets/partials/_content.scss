@@ -1,0 +1,18 @@
+.content {
+  padding: $content-padding;
+
+  h3 {
+    color: $header-color;
+    letter-spacing: $content-header-spacing;
+    text-transform: uppercase;
+  }
+
+  figure.banner {
+    display: flex;
+
+    img {
+      margin: auto;
+      max-width: 100%;
+    }
+  }
+}

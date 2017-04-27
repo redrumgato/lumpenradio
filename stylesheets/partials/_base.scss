@@ -29,4 +29,12 @@ body {
   font-family: $base-font-family;
   margin: auto $global-margin-size;
   overflow-wrap: break-word;
+
+  a {
+    color: black;
+
+    &:hover {
+      color: $header-color;
+    }
+  }
 }
