@@ -11,8 +11,9 @@
     display: flex;
 
     img {
-      margin: auto;
+      margin: 0 auto;
       max-width: 100%;
+      max-height: $content-header-img-max-height;
     }
   }
 }
