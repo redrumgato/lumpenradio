@@ -10,6 +10,7 @@ module.exports = function(env) {
     output: {
       filename: "static/js/app.min.js"
     },
+    devtool: env.dev && 'source-map',
     module: {
       rules: [
         {
@@ -46,7 +47,9 @@ module.exports = function(env) {
       })
     ].concat(!env.prod ? [] : [
       new webpack.optimize.OccurrenceOrderPlugin(),
-      new webpack.optimize.UglifyJsPlugin()
+      new webpack.optimize.UglifyJsPlugin({
+        sourceMap: env.dev
+      })
     ]),
     externals: {
       jquery: "jQuery"
