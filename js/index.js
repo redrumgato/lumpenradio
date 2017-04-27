@@ -12,9 +12,9 @@ new Pjax({
 });
 
 $(() => {
-  var $body = $("body");
-  var bodyScrollPosition;
-  var menuToggleOnClick = (selector, show) => {
+  const $body = $("body");
+  let bodyScrollPosition;
+  const menuToggleOnClick = (selector, show) => {
     $(selector).click(() => {
       show && (bodyScrollPosition = $body.scrollTop());
       $(".menu").css("display", show ? "flex" : "none");
@@ -30,14 +30,14 @@ $(() => {
     menuToggleOnClick(".menu__item a", false);
   });
 
-  var $play = $("#play-button");
-  var $pause = $("#pause-button");
-  var $loading = $(".player__loading-icon");
+  const $play = $("#play-button");
+  const $pause = $("#pause-button");
+  const $loading = $(".player__loading-icon");
 
   Howler.unload();
 
   console.log("creating stream");
-  var stream = new Howl({
+  const stream = new Howl({
     src: "http://stream.lumpen.fm:7416/;stream/1",
     format: "mp3",
     html5: true,
