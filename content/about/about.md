@@ -19,9 +19,9 @@ This program is partially supported by a grant from the Illinois Arts Council Ag
 
 Public Media Institute  
 960 W 31st St  
-Chicago Il 60608  
-info@lumpenradio.com  
-(773)823-9700
+Chicago, IL 60608  
+[info@lumpenradio.com](mailto:info@lumpenradio.com)  
+[(773) 823-9700](tel:+1-773-823-9700)
 
 ### Download The App
 
