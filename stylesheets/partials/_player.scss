@@ -33,7 +33,7 @@
 
     #loading-icon {
       position: absolute;
-      top: ($player-inner-height - 3rem) / 2;
+      top: $player-loading-icon-top;
       left: 0;
       color: white;
       text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
@@ -42,8 +42,8 @@
 
     #loading-icon-shadow {
       position: absolute;
-      top: ($player-inner-height - 3rem) / 2 + .15rem;
-      left: .15rem;
+      top: $player-loading-icon-top + $player-loading-icon-shadow-offset;
+      left: $player-loading-icon-shadow-offset;
     }
   }
 

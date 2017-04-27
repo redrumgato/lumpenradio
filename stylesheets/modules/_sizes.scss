@@ -16,6 +16,8 @@ $player-height: $player-content-height + 2 * $player-padding;
 $player-logo-height: 2rem;
 $player-logo-font-size: .75rem;
 $player-buttons-width: 2.5rem;
+$player-loading-icon-top: ($player-inner-height - 3rem) / 2;
+$player-loading-icon-shadow-offset: .15rem;
 
 $header-height: $header-row-height + 3 * $header-margin-size + $player-height;
 
