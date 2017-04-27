@@ -3,4 +3,3 @@ node_modules
 public
 static/css/*
 static/js/*
-layouts/_default/baseof.html
