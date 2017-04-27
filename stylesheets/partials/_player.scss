@@ -30,6 +30,28 @@
       text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black, 3px 3px black;
       display: none;
     }
+
+    #loading-icon {
+      position: absolute;
+      top: ($player-inner-height - 3rem) / 2;
+      left: 0;
+      color: white;
+      text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+      z-index: 9;
+    }
+
+    #loading-icon-shadow {
+      position: absolute;
+      top: ($player-inner-height - 3rem) / 2 + .15rem;
+      left: .15rem;
+    }
+  }
+
+  &__loading-icon {
+    position: relative;
+    height: $player-inner-height;
+    width: $player-buttons-width;
+    display: none;
   }
 
   &__logo {

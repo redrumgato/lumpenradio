@@ -32,6 +32,7 @@ $(function() {
 
   var $play = $("#play-button");
   var $pause = $("#pause-button");
+  var $loading = $(".player__loading-icon");
 
   Howler.Howler.unload();
 
@@ -40,8 +41,11 @@ $(function() {
     src: "http://stream.lumpen.fm:7416/;stream/1",
     format: "mp3",
     html5: true,
+    preload: false,
     onload: function() {
       console.log("stream loaded");
+      $loading.hide();
+      $pause.show();
     },
     onloaderror: function(_, error) {
       console.log("error:");
@@ -62,7 +66,7 @@ $(function() {
       stream.pause();
     } else {
       $play.hide();
-      $pause.show();
+      stream.state() == "loaded" ? $pause.show() : $loading.show();
       stream.play();
     }
   });
