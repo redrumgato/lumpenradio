@@ -42,19 +42,19 @@ $(() => {
     format: "mp3",
     html5: true,
     preload: false,
-    onload: () => {
+    onload () {
       console.log("stream loaded");
       $loading.hide();
       $pause.show();
     },
-    onloaderror: (_, error) => {
+    onloaderror (_, error) {
       console.log("error:");
       console.log(error);
     },
-    onplay: () => {
+    onplay () {
       console.log("playing");
     },
-    onpause: () => {
+    onpause () {
       console.log("pausing");
     }
   });
