@@ -1,21 +1,21 @@
 'use strict';
 
-require("Styles/main.scss");
+import "Styles/main.scss";
 
-var Pjax = require("pjax");
-var $ = require("jquery");
-var Howler = require("howler");
+import Pjax from "pjax";
+import $ from "jquery";
+import { Howler, Howl } from "howler";
 
 new Pjax({
   elements: ["a"],
   selectors: ["title", "main", ".menu__list"]
 });
 
-$(function() {
+$(() => {
   var $body = $("body");
   var bodyScrollPosition;
-  var menuToggleOnClick = function(selector, show) {
-    $(selector).click(function() {
+  var menuToggleOnClick = (selector, show) => {
+    $(selector).click(() => {
       show && (bodyScrollPosition = $body.scrollTop());
       $(".menu").css("display", show ? "flex" : "none");
       $body.css("position", show ? "fixed" : "static");
@@ -26,7 +26,7 @@ $(function() {
   menuToggleOnClick(".top-row__hamburger", true);
   menuToggleOnClick(".menu__close-button, .menu__link", false);
 
-  $(document).on('pjax:complete', function() {
+  $(document).on('pjax:complete', () => {
     menuToggleOnClick(".menu__item a", false);
   });
 
@@ -34,32 +34,32 @@ $(function() {
   var $pause = $("#pause-button");
   var $loading = $(".player__loading-icon");
 
-  Howler.Howler.unload();
+  Howler.unload();
 
   console.log("creating stream");
-  var stream = new Howler.Howl({
+  var stream = new Howl({
     src: "http://stream.lumpen.fm:7416/;stream/1",
     format: "mp3",
     html5: true,
     preload: false,
-    onload: function() {
+    onload: () => {
       console.log("stream loaded");
       $loading.hide();
       $pause.show();
     },
-    onloaderror: function(_, error) {
+    onloaderror: (_, error) => {
       console.log("error:");
       console.log(error);
     },
-    onplay: function() {
+    onplay: () => {
       console.log("playing");
     },
-    onpause: function() {
+    onpause: () => {
       console.log("pausing");
     }
   });
 
-  $(".player__buttons").click(function() {
+  $(".player__buttons").click(() => {
     if(stream.playing()) {
       $pause.hide();
       $play.show();

@@ -13,6 +13,13 @@ module.exports = function(env) {
     module: {
       rules: [
         {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: [
+            'babel-loader',
+          ],
+        },
+        {
           test: /\.scss$/,
           use: ExtractTextPlugin.extract({
             use: [
