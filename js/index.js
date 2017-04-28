@@ -8,7 +8,7 @@ import { Howler, Howl } from "howler";
 
 new Pjax({
   elements: ["a"],
-  selectors: ["title", "main", ".menu__list"]
+  selectors: ["title", ".content", ".menu__list"]
 });
 
 $(() => {

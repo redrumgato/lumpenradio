@@ -9,27 +9,27 @@ title = "Lumpen Radio"
 [[menu.main]]
   weight = "-6"
   name = "Schedule"
-  url = "/schedule"
+  url = "/schedule/"
 [[menu.main]]
   weight = "-5"
   name = "Shows"
-  url = "/shows"
+  url = "/shows/"
 [[menu.main]]
   weight = "-4"
   name = "About"
-  url = "/about"
+  url = "/about/"
 [[menu.main]]
   weight = "-3"
   name = "Sponsor"
-  url = "/sponsor"
+  url = "/sponsor/"
 [[menu.main]]
   weight = "-2"
   name = "Swag"
-  url = "/swag"
+  url = "/swag/"
 [[menu.main]]
   weight = "-1"
   name = "Newsletter"
-  url = "/newsletter"
+  url = "/newsletter/"
 [[menu.main]]
   weight = "0"
   name = "Support"
