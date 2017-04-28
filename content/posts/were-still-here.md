@@ -23,7 +23,7 @@ One of the best things about being around Lumpen Radio is that we get to meet am
 
 We want to hug all of our Lumpen Radio colleagues and their guests for making this possible, especially Logan Bay, Jamie Trecker, and Hannah Larson for keeping this ship running. It is super hard doing what they do every single day. We should all send them cookies, weed, and beer. Or in Logan's case, fantasy board games.
 
-{{< figure src="https://s3-us-west-2.amazonaws.com/s.lumpen.com/media/images/front7.jpg" alt="Low Power to the People" >}}
+{{< figure class="padded" src="https://s3-us-west-2.amazonaws.com/s.lumpen.com/media/images/front7.jpg" alt="Low Power to the People" >}}
 
 We hope you will join us on this worthwhile endeavor. At the end of this month we are going to start our very first Membership Drive instead of doing the occasional Swag-A-Thon. We are going to ask you to become an annual member of Lumpen Radio! Becoming a member will help us sustain our operations, make more programs that kick ass and bring Low Power Radio to the People! Details about the Drive will be sent to you soon. In the meantime we will be working on our website to make it more mobile friendly and changing up a few things so we can kick some serious ass in 2017.
 

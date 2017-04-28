@@ -1,5 +1,6 @@
 #mc-embedded-subscribe-form {
   display: flex;
+  justify-content: center;
 
   input {
     font-family: Akkurat Mono, FontAwesome;
@@ -9,13 +10,17 @@
     height: $input-height;
     padding-top: $input-padding;
     margin: $input-margin;
+    border-radius: 0;
+    -webkit-appearance: none;
 
     &.button {
       font-weight: 600;
+      max-width: 40%;
     }
 
     &.email {
       padding-left: $email-input-padding;
+      max-width: 60%;
     }
 
     &:last-of-type {

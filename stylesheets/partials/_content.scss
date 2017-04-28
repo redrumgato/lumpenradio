@@ -37,10 +37,13 @@
 
     &.padded {
       margin: auto;
+      text-align: center;
 
       img {
+        display: inline-block;
         margin: 0 10%;
         max-width: 80%;
+        max-height: $content-img-max-height;
       }
     }
   }
