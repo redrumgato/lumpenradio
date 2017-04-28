@@ -1,19 +1,47 @@
 .content {
   padding: $content-padding;
 
-  h3 {
-    color: $header-color;
-    letter-spacing: $content-header-spacing;
+  h1 {
     text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: $content-header-spacing;
+    font-weight: normal;
   }
 
-  figure.banner {
-    display: flex;
+  h3 {
+    text-transform: uppercase;
+    color: $header-color;
+    letter-spacing: $content-header-spacing;
+    font-weight: normal;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  figure {
+    margin: 0;
 
     img {
       margin: 0 auto;
-      max-width: 100%;
-      max-height: $content-header-img-max-height;
+      display: block;
+    }
+
+    &.banner {
+      margin: auto;
+
+      img {
+        max-height: $content-banner-img-max-height;
+      }
+    }
+
+    &.padded {
+      margin: auto;
+
+      img {
+        margin: 0 10%;
+        max-width: 80%;
+      }
     }
   }
 }

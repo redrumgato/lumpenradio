@@ -14,6 +14,7 @@ new Pjax({
 $(() => {
   const $body = $("body");
   let bodyScrollPosition;
+
   const menuToggleOnClick = (selector, show) => {
     $(selector).click(() => {
       show && (bodyScrollPosition = $body.scrollTop());
@@ -27,7 +28,7 @@ $(() => {
   menuToggleOnClick(".menu__close-button, .menu__link", false);
 
   $(document).on('pjax:complete', () => {
-    menuToggleOnClick(".menu__item a", false);
+    menuToggleOnClick(".menu__link", false);
   });
 
   const $play = $("#play-button");

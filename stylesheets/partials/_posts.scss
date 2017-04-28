@@ -1,0 +1,13 @@
+.post {
+  header {
+    p {
+      color: $header-color;
+      margin-bottom: 0;
+      font-size: $post-date-font-size;
+    }
+
+    h1 {
+      margin: $post-header-margin;;
+    }
+  }
+}

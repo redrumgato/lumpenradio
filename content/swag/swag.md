@@ -4,7 +4,7 @@ title = "Swag"
 
 +++
 
-{{< figure class="banner" src="https://s3-us-west-2.amazonaws.com/s.lumpen.com/media/images/nateotto.gif" >}}
+{{< figure class="padded" src="https://s3-us-west-2.amazonaws.com/s.lumpen.com/media/images/nateotto.gif" >}}
 
 ### Lumpen Radio Swag
 
