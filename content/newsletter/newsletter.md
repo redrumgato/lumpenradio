@@ -8,7 +8,9 @@ title = "newsletter"
 
 ### Mailing list
 
-WLPN is a volunteer-run station that amplifies innovative ideas, plays eclectic curated music and broadcasts socially engaged commentary on the issues of our day. You want to learn more? Sign up for our newsletter right here.
+WLPN is a volunteer-run station that amplifies innovative ideas, plays eclectic curated music and broadcasts socially engaged commentary on the issues of our day. We also put on events and concerts, and get involved with other initiatives.
+
+Our newsletter will keep you updated with all things Lumpen.
 
 <form action="http://lumpenradio.us10.list-manage.com/subscribe/post?u=e9b74940ea8fe328ad492732d&amp;id=1e0f524d1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
   <input type="email" spellcheck="false" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">

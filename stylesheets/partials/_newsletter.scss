@@ -1,26 +1,31 @@
 #mc-embedded-subscribe-form {
   display: flex;
   justify-content: center;
+  width: 100%;
 
   input {
     font-family: Akkurat Mono, FontAwesome;
     background: white;
-    border: $input-border;
+    border: $newsletter-input-border;
     color: $dark-grey;
-    height: $input-height;
-    padding-top: $input-padding;
-    margin: $input-margin;
+    height: $newsletter-input-height;
+    line-height: $newsletter-input-height;
+    margin: $newsletter-input-margin;
     border-radius: 0;
     -webkit-appearance: none;
 
     &.button {
       font-weight: 600;
-      max-width: 40%;
+      width: $newsletter-button-width;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &.email {
-      padding-left: $email-input-padding;
-      max-width: 60%;
+      padding-left: $newsletter-email-padding;
+      padding-top: $newsletter-input-padding;
+      flex-grow: 1;
+      width: $newsletter-email-width;;
     }
 
     &:last-of-type {

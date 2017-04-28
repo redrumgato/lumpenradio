@@ -54,8 +54,10 @@ $post-header-margin: .5rem auto auto;
 $post-date-font-size: .8rem;
 $post-margin: auto auto 1.5rem;
 
-$input-border: solid 1px $dark-grey;
-$input-height: 2rem;
-$input-padding: ($input-height - 1rem) / 4;
-$input-margin: auto .25rem auto 0;
-$email-input-padding: 1rem;
+$newsletter-input-border: solid 1px $dark-grey;
+$newsletter-input-height: 2rem;
+$newsletter-input-padding: ($newsletter-input-height - 1rem) / 4;
+$newsletter-input-margin: auto .5rem auto 0;
+$newsletter-email-padding: .5rem;
+$newsletter-button-width: 7rem;
+$newsletter-email-width: 8rem;
