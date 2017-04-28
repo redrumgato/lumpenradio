@@ -1,0 +1,25 @@
+#mc-embedded-subscribe-form {
+  display: flex;
+
+  input {
+    font-family: Akkurat Mono, FontAwesome;
+    background: white;
+    border: $input-border;
+    color: $dark-grey;
+    height: $input-height;
+    padding-top: $input-padding;
+    margin: $input-margin;
+
+    &.button {
+      font-weight: 600;
+    }
+
+    &.email {
+      padding-left: $email-input-padding;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
