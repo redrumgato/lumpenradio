@@ -3,6 +3,6 @@
 {{ define "main" }}
   <div data-tockify-component="calendar" data-tockify-calendar="lumpenradio"></div>
   <script type="text/javascript">
-    window._tkf.loadDeclaredCalendars();
+    window._tkf && window._tkf.loadDeclaredCalendars();
   </script>
 {{ end }}
