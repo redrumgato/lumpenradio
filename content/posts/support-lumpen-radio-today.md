@@ -1,6 +1,6 @@
 +++
 date = "2017-04-27T17:04:30-05:00"
-title = "support lumpen radio today"
+title = "Support Lumpen Radio Today!"
 draft = false
 
 +++
