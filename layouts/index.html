@@ -1,7 +1,7 @@
 {{ define "title" }}Live{{ end }}
 
 {{ define "main" }}
-  {{ range where .Data.Pages "Section" "posts" }}
+  {{ range (.Paginate (where .Data.Pages "Section" "posts")).Pages }}
     {{ .Render "single" }}
   {{ end }}
 {{ end }}

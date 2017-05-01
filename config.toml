@@ -1,6 +1,7 @@
 baseURL = "https://lumpenradio.netlify.com/"
 languageCode = "en-us"
 title = "Lumpen Radio"
+paginate = 3
 
 [[menu.main]]
   weight = "-7"
