@@ -51,25 +51,32 @@
     text-align: center;
     margin-bottom: 0;
 
-    .menu__item:first-of-type {
-      border-top: $menu-border;
-    }
   }
 
   &__item {
     border-bottom: $menu-border;
     height: $menu-item-height;
-    padding-top: $menu-item-padding-top;
+    line-height: $menu-item-height;
     display: flex;
 
     a {
-      color: black;
+      padding-top: $menu-item-padding-top;
       font-size: $menu-link-height;
-      margin: auto;
       width: 100%;
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: .25rem;
+    }
+
+    &:first-of-type {
+      border-top: $menu-border;
+    }
+
+    &.support {
+      a {
+        color: $brand-color;
+        font-weight: bold;
+      }
     }
   }
 
