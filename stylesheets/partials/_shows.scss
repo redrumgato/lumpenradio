@@ -1,12 +1,20 @@
 .shows {
   article {
     margin: $shows-margin;
+
+    &:first-of-type {
+      border-top: $shows-border;
+      padding-top: $shows-space-between-header-and-content;
+      margin-top: 0;
+    }
   }
 
   h1 {
     text-align: center;
     text-decoration: none;
     color: $header-color;
+    margin: $shows-header-margin;
+    margin-bottom: 0;
   }
 
   h3 {
