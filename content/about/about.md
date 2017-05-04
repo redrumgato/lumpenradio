@@ -32,10 +32,14 @@ The {{< ext "Lumpen Radio App" "http://appsto.re/us/NdeV7.i" />}} is now availab
 Ed Marszewski /Director  
 Logan Bay /Station Director  
 Marian Frost /Digital Media  
-Josh Habdas /App developer  
-Hannah Larson /Social Media  
-Leah Menzer /Underwriting  
+Jamie Trecker /Station Manager  
+Hannah Larson /Outreach  
+Justin Cholewa /Underwriting  
+Josh Habdas /App Developer  
+James Ewert Jr /Production  
+Josh Habdas /App Developer  
+Audrey Schwarz /Software Dev  
+Ben Elkind /Digital Producer  
 Matthew Kylestewa /Editor  
-Charles Nankivel /Editor  
-Justin Cholewa /Editor  
-James Ewert Jr /Fluffer
+Shanna van Volt /Production  
+Studio Chew /Creative
