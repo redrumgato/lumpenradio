@@ -1,9 +1,26 @@
 {{ define "title" }}Shows{{ end }}
 
 {{ define "main" }}
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "shows").Reverse 10 }}
+  {{ $currentPage := $paginator.PageNumber }}
   <div class="shows">
-    {{ range .Data.Pages.Reverse }}
+    <h1>Shows{{ if gt $currentPage 1 }} {{ $currentPage }}{{ end }}</h1>
+    {{ range $paginator.Pages }}
       {{ .Render "thumbnail" }}
     {{ end }}
+    <div class="pager">
+      {{ $currentPage := $paginator.PageNumber }}
+      Page
+      {{ range $paginator.Pagers }}
+        {{ if eq .PageNumber $currentPage }}
+          {{ printf "%02d" .PageNumber }}
+        {{ else }}
+          <a href="{{ .URL }}">{{ printf "%02d" .PageNumber }}</a>
+        {{ end }}
+      {{ end }}
+      {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}"><i class="fa fa-caret-right"></i></a>
+      {{ end }}
+    </div>
   </div>
 {{ end }}

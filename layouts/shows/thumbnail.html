@@ -1,4 +1,9 @@
-<div>
-  <h3>{{ .Title }}</h3>
+<article class="show-thumbnail">
+  <a href="{{ .URL }}">
+    <img src="{{ .Params.thumbnail }}">
+  </a>
+  <a href="{{ .URL }}">
+    <h3>{{ .Title }}</h3>
+  </a>
   <span>{{ delimit .Params.tags ", " }}</span>
-</div>
+</article>
