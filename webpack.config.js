@@ -6,7 +6,7 @@ module.exports = function(env) {
   env = env || { dev: true };
   return {
     context: path.resolve(__dirname),
-    entry: "./js/index.js",
+    entry: "./js/init.js",
     output: {
       filename: "static/js/app.min.js"
     },
@@ -54,5 +54,5 @@ module.exports = function(env) {
     externals: {
       jquery: "jQuery"
     }
-  }
+  };
 }

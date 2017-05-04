@@ -8,6 +8,7 @@ Lumpen Radio's website.
 2. Install node.js (preferably via [nvm](https://github.com/creationix/nvm))
 3. Clone the repo
 4. `npm install`
+5. `npm install --global karma-cli`
 
 ### Commands
 

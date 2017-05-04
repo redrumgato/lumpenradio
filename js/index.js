@@ -1,17 +1,15 @@
 'use strict';
 
-import "Styles/main.scss";
-
 import Pjax from "pjax";
 import $ from "jquery";
-import { Howler, Howl } from "howler";
+import { Howler, Howl } from "howler/dist/howler.core.min.js";
 
-new Pjax({
-  elements: ["a"],
-  selectors: ["title", ".content", ".menu__list"]
-});
+export default function setup() {
+  new Pjax({
+    elements: ["a"],
+    selectors: ["title", ".content", ".menu__list"]
+  });
 
-$(() => {
   const $body = $("body");
   let bodyScrollPosition;
 
@@ -71,4 +69,4 @@ $(() => {
       stream.play();
     }
   });
-});
+};
