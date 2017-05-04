@@ -9,11 +9,38 @@ describe("The UI", () => {
     setup();
   });
 
-  it("shows the menu on hamburger click", () => {
-    $(".menu").hide();
-    expect($(".menu")).toBeHidden();
+  describe("menu", () => {
+    const hamburgerSelector = ".top-row__hamburger";
+    const closeButtonSelector = ".menu__close-button";
+    const menuLinkSelector = ".menu__link";
 
-    $(".top-row__hamburger").click();
-    expect($(".menu")).not.toBeHidden();
+    [closeButtonSelector, menuLinkSelector].forEach((closeSelector) => {
+      it(`shows the menu when hamburger is clicked and hides it when ${closeSelector} is clicked`, () => {
+        const $menu = $(".menu");
+        $menu.hide();
+        expect($menu).toBeHidden();
+
+        $(hamburgerSelector).click();
+        expect($menu).toBeVisible();
+
+        $(closeSelector).click();
+        expect($menu).toBeHidden();
+      });
+    });
+
+    it("locks <body> when open, and restores it on close", () => {
+      const $body = $("body");
+      $body.css("height", "2000px");
+      expect($body.css("position")).toEqual("static");
+
+      $body.scrollTop(1);
+      $(hamburgerSelector).click();
+      expect($body.css("position")).toEqual("fixed");
+      expect($body.scrollTop()).toBe(0);
+
+      $(closeButtonSelector).click();
+      expect($body.css("position")).toEqual("static");
+      expect($body.scrollTop()).toBe(1);
+    });
   });
 });

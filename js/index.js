@@ -35,7 +35,6 @@ export default function setup() {
 
   Howler.unload();
 
-  console.log("creating stream");
   const stream = new Howl({
     src: "http://stream.lumpen.fm:7416/;stream/1",
     format: "mp3",

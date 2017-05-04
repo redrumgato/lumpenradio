@@ -62,21 +62,8 @@ module.exports = function(config) {
             use: [
               'babel-loader',
             ],
-          },
-          {
-            test: /\.scss$/,
-            use: [
-              "css-loader",
-              "postcss-loader",
-              "sass-loader"
-            ]
           }
         ]
-      },
-      resolve: {
-        alias: {
-          Styles: path.resolve(__dirname, "stylesheets/")
-        }
       }
     },
 
