@@ -11,9 +11,12 @@
     <div class="pager">
       {{ $currentPage := $paginator.PageNumber }}
       Page
+      {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}"><i class="fa fa-caret-left"></i></a>
+      {{ end }}
       {{ range $paginator.Pagers }}
         {{ if eq .PageNumber $currentPage }}
-          {{ printf "%02d" .PageNumber }}
+          <span>{{ printf "%02d" .PageNumber }}</span>
         {{ else }}
           <a href="{{ .URL }}">{{ printf "%02d" .PageNumber }}</a>
         {{ end }}

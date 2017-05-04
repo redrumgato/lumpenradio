@@ -17,4 +17,15 @@
     color: black;
     margin: $shows-header-margin;
   }
+
+  .pager {
+    text-align: center;
+    color: $brand-color;
+    word-spacing: $pager-word-spacing;
+    margin: $pager-margin;
+
+    a {
+      color: $brand-color;
+    }
+  }
 }
