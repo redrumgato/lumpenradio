@@ -9,23 +9,20 @@
     border: $newsletter-input-border;
     color: $dark-grey;
     height: $newsletter-input-height;
-    line-height: $newsletter-input-height;
     margin: $newsletter-input-margin;
     border-radius: 0;
+    padding: $newsletter-input-padding;
     -webkit-appearance: none;
 
     &.button {
       font-weight: 600;
       width: $newsletter-button-width;
-      padding-left: 0;
-      padding-right: 0;
     }
 
     &.email {
-      padding-left: $newsletter-email-padding;
-      padding-top: $newsletter-input-padding;
+      text-indent: $newsletter-email-indent;
       flex-grow: 1;
-      width: $newsletter-email-width;;
+      width: $newsletter-email-width;
     }
 
     &:last-of-type {

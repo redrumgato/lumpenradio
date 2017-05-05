@@ -38,6 +38,7 @@ export default function setup() {
 
   menuToggleOnClick(".top-row__hamburger", true);
   menuToggleOnClick(".menu__close-button, .menu__link", false);
+  initCountdown();
 
   $(document).on('pjax:complete', () => {
     menuToggleOnClick(".menu__link", false);
@@ -83,6 +84,4 @@ export default function setup() {
       stream.play();
     }
   });
-
-  initCountdown();
 };

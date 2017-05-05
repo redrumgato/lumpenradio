@@ -6,10 +6,9 @@
   "scripts": {
     "build": "webpack --env.prod && hugo",
     "build:netlify": "webpack --env.prod && hugo_0.19",
-    "watch": "webpack --watch & hugo serve",
+    "watch": "webpack --watch & hugo serve --bind=\"0.0.0.0\"",
     "start": "npm run watch",
     "stop": "ps aux | grep -E 'hugo|webpack' | grep -v grep | awk '{print $2}' | xargs kill 2> /dev/null || echo 'Nothing to stop.'",
-    "server": "npm run build && http-server -c-1 -p 1313 public",
     "test": "karma start --single-run"
   },
   "repository": {
