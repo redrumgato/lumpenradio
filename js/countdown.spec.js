@@ -32,7 +32,7 @@ describe("countdown", () => {
   });
 
   it("returns null when the countdown is over", () => {
-    countdown("5/4/2017", callback);
+    countdown("5/3/2017 23:59:59:1", callback);
     expect(callback).toHaveBeenCalledWith(null);
   });
 });

@@ -5,8 +5,24 @@ import $ from "jquery";
 import { Howler, Howl } from "howler";
 import countdown from "./countdown";
 
+let bodyScrollPosition;
+
+const menuToggleOnClick = (selector, show) => {
+  const $body = $("body");
+  $(selector).click(() => {
+    show && (bodyScrollPosition = $body.scrollTop());
+    $(".menu").css("display", show ? "flex" : "none");
+    $body.css("position", show ? "fixed" : "static");
+    show || $body.scrollTop(bodyScrollPosition);
+  });
+};
+
 const initCountdown = () => {
   countdown($(".countdown").attr("data-date"), (timeSegments) => {
+    if(!timeSegments) {
+      $(".countdown").hide();
+      return;
+    }
     $(".countdown .days").html(timeSegments[0]);
     $(".countdown .hours").html(timeSegments[1]);
     $(".countdown .minutes").html(timeSegments[2]);
@@ -19,18 +35,6 @@ export default function setup() {
     elements: ["a"],
     selectors: ["title", ".content", ".menu__list"]
   });
-
-  const $body = $("body");
-  let bodyScrollPosition;
-
-  const menuToggleOnClick = (selector, show) => {
-    $(selector).click(() => {
-      show && (bodyScrollPosition = $body.scrollTop());
-      $(".menu").css("display", show ? "flex" : "none");
-      $body.css("position", show ? "fixed" : "static");
-      show || $body.scrollTop(bodyScrollPosition);
-    });
-  };
 
   menuToggleOnClick(".top-row__hamburger", true);
   menuToggleOnClick(".menu__close-button, .menu__link", false);
