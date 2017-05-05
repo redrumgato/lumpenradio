@@ -12,6 +12,7 @@ module.exports = function(env) {
     },
     devtool: env.dev && 'source-map',
     module: {
+      noParse: [/moment.js/],
       rules: [
         {
           test: /\.js$/,
