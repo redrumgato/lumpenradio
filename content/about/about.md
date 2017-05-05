@@ -35,7 +35,6 @@ Marian Frost /Digital Media
 Jamie Trecker /Station Manager  
 Hannah Larson /Outreach  
 Justin Cholewa /Underwriting  
-Josh Habdas /App Developer  
 James Ewert Jr /Production  
 Josh Habdas /App Developer  
 Audrey Schwarz /Software Dev  
