@@ -1,0 +1,23 @@
+<div class="countdown" data-date="{{ .Get 0 }}">
+  <div class="countdown__timer">
+    <div class="countdown__segment">
+      <span class="countdown__time days"></span>
+      <span class="countdown__label">Days</span>
+    </div>
+    <div class="countdown__segment">
+      <span class="countdown__time hours"></span>
+      <span class="countdown__label">Hours</span>
+    </div>
+    <div class="countdown__segment">
+      <span class="countdown__time minutes"></span>
+      <span class="countdown__label">Minutes</span>
+    </div>
+    <div class="countdown__segment">
+      <span class="countdown__time seconds"></span>
+      <span class="countdown__label">Seconds</span>
+    </div>
+  </div>
+  <p class="countdown__description">
+    {{ .Get 1 }}
+  </p>
+</div>

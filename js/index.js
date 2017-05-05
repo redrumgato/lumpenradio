@@ -2,7 +2,17 @@
 
 import Pjax from "pjax";
 import $ from "jquery";
-import { Howler, Howl } from "howler/dist/howler.core.min.js";
+import { Howler, Howl } from "howler";
+import countdown from "./countdown";
+
+const initCountdown = () => {
+  countdown($(".countdown").attr("data-date"), (timeSegments) => {
+    $(".countdown .days").html(timeSegments[0]);
+    $(".countdown .hours").html(timeSegments[1]);
+    $(".countdown .minutes").html(timeSegments[2]);
+    $(".countdown .seconds").html(timeSegments[3]);
+  });
+};
 
 export default function setup() {
   new Pjax({
@@ -27,6 +37,7 @@ export default function setup() {
 
   $(document).on('pjax:complete', () => {
     menuToggleOnClick(".menu__link", false);
+    initCountdown();
   });
 
   const $play = $("#play-button");
@@ -68,4 +79,6 @@ export default function setup() {
       stream.play();
     }
   });
+
+  initCountdown();
 };

@@ -70,7 +70,8 @@ module.exports = function(config) {
     webpackMiddleware: {
       // webpack-dev-middleware configuration
       // i. e.
-      stats: 'errors-only'
+      stats: 'errors-only',
+      noInfo: true
     },
 
 

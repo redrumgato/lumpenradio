@@ -1,0 +1,25 @@
+.countdown {
+  color: $brand-color;
+  text-align: center;
+  text-transform: uppercase;
+
+  &__timer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__segment {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__time {
+    font-size: 3rem;
+    height: 3rem;
+  }
+
+  &__label {
+    font-size: .875rem;
+  }
+}
