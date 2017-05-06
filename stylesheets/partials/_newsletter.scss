@@ -4,20 +4,11 @@
   width: 100%;
 
   input {
-    font-family: Akkurat Mono, FontAwesome;
-    background: white;
-    border: $newsletter-input-border;
-    color: $dark-grey;
-    height: $newsletter-input-height;
+    @include input($dark-grey, white);
     margin: $newsletter-input-margin;
-    border-radius: 0;
-    padding: $newsletter-input-padding;
-    -webkit-appearance: none;
 
     &.button {
-      background-color: $brand-color;
-      color: white;
-      font-weight: 600;
+      @include button(white, $brand-color);
       width: $newsletter-button-width;
     }
 

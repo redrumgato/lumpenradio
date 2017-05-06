@@ -19,6 +19,16 @@
     width: 100%;
   }
 
+  .button-container {
+    display: flex;
+    text-decoration: none;
+  }
+
+  .button {
+    @include button(white, $brand-color);
+    margin: auto;
+  }
+
   figure {
     margin: 0;
 

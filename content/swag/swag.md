@@ -8,9 +8,13 @@ title = "Swag"
 
 ### Lumpen Radio Swag
 
-{{< countdown "05/20/2017" "until the Swag-a-Thon is over!" >}}
+Hey there Lumpen Radio supporters! Take a look at our shop.
 
-Hey there Lumpen Radio supporters! Take a look at {{< ext "our shop" "http://lumpenradio.bigcartel.com" />}}.
+{{< ext "http://lumpenradio.bigcartel.com" >}}
+  <span class="button-container">
+    <input class="button" value="Swag Shop &#xf0da"></input>
+  </span>
+{{< /ext >}}
 
 We set up the shop so you can make a contribution and get some awesome stuff while supporting WLPN.
 
