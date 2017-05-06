@@ -1,6 +1,8 @@
 <article class="show-thumbnail">
   <a href="{{ .URL }}">
-    <img src="{{ .Params.thumbnail }}">
+    <figure class="padded">
+      <img src="{{ .Params.thumbnail }}">
+    </figure>
   </a>
   <a href="{{ .URL }}">
     <h3>{{ .Title }}</h3>
