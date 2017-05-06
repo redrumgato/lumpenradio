@@ -10,11 +10,11 @@ title = "Swag"
 
 Hey there Lumpen Radio supporters! Take a look at our shop.
 
-{{< ext "http://lumpenradio.bigcartel.com" >}}
-  <span class="button-container">
+<span class="button-container">
+  {{< ext "http://lumpenradio.bigcartel.com" >}}
     <input class="button" value="Swag Shop &#xf0da"></input>
-  </span>
-{{< /ext >}}
+  {{< /ext >}}
+</span>
 
 We set up the shop so you can make a contribution and get some awesome stuff while supporting WLPN.
 
