@@ -27,7 +27,7 @@ We want to hug all of our Lumpen Radio colleagues and their guests for making th
 
 We hope you will join us on this worthwhile endeavor. At the end of this month we are going to start our very first Membership Drive instead of doing the occasional Swag-A-Thon. We are going to ask you to become an annual member of Lumpen Radio! Becoming a member will help us sustain our operations, make more programs that kick ass and bring Low Power Radio to the People! Details about the Drive will be sent to you soon. In the meantime we will be working on our website to make it more mobile friendly and changing up a few things so we can kick some serious ass in 2017.
 
-If you ever wanted to stop by and check out our HQ please consider dropping in during one of our exhibitions. A new show opens Friday, March 10 from 6-9pm, as a trio of Danish artists will transform our studio into a playground/labor camp for domestic robots. The show, called Nature Go Home, will definitely be a weird one. Stop by for some snacks, pet DJ Dash, and let us know how you think we are doing.  We are located at Co-Prosperity Sphere, {{< ext "3219 S Morgan St" "https://goo.gl/maps/qTiWJhG2TYJ2" />}}, Chicago IL 60608.
+If you ever wanted to stop by and check out our HQ please consider dropping in during one of our exhibitions. A new show opens Friday, March 10 from 6-9pm, as a trio of Danish artists will transform our studio into a playground/labor camp for domestic robots. The show, called Nature Go Home, will definitely be a weird one. Stop by for some snacks, pet DJ Dash, and let us know how you think we are doing.  We are located at Co-Prosperity Sphere, {{< location >}}.
 
 Thanks for reading. Thanks for listening. See you all on campus.
 
