@@ -8,7 +8,7 @@
     margin: $newsletter-input-margin;
 
     &.button {
-      @include button(white, $brand-color);
+      @include button(white, $brand-color, 0);
       width: $newsletter-button-width;
     }
 

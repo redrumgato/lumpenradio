@@ -8,10 +8,11 @@
   -webkit-appearance: none;
 }
 
-@mixin button($fgColor, $bgColor) {
+@mixin button($fgColor, $bgColor, $padding: $button-padding) {
   @include input($fgColor, $bgColor);
   text-align: center;
   color: $fgColor;
   background: $bgColor;
   font-weight: 600;
+  padding: $padding;
 };
