@@ -28,12 +28,13 @@ footer {
     }
 
     &__button {
-      padding: $footer-padding;
+      padding: $footer-button-padding;
       background: white;
+      height: $footer-button-height;
+      line-height: $footer-button-height;
 
       a {
         color: $brand-color;
-        padding: $link-padding;
         text-decoration: none;
         font-size: $footer-button-font-size;;
         font-weight: bold;
@@ -42,7 +43,6 @@ footer {
       }
 
       &.newsletter {
-        padding: $footer-button-padding;
         background: $brand-color;
         border: $footer-button-border;
 

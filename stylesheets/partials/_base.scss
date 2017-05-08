@@ -18,7 +18,7 @@ $border: 2px solid $brand-color;
 
 @font-face {
   font-family: Akkurat Mono;
-  src: url("/fonts/AkkuratMono.otf") format("opentype"), url("/fonts/AkkurateMonoMono.eot") format("eot"), url("/fonts/AkkuratMonoMono.svg") format("svg"), url("/fonts/akkurat-mono.woff") format("woff"), url("/fonts/akkurat-mono.tff") format("truetype")
+  src: url("/fonts/AkkuratMono.woff") format("woff"), url("/fonts/AkkuratMono.eot") format("eot"), url("/fonts/AkkuratMono.tff") format("truetype"), url("/fonts/AkkuratMono.svg") format("svg")
 }
 
 body {
