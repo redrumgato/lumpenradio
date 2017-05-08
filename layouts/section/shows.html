@@ -12,7 +12,7 @@
       {{ $currentPage := $paginator.PageNumber }}
       Page
       {{ if $paginator.HasPrev }}
-        <a href="{{ $paginator.Prev.URL }}"><i class="fa fa-caret-left"></i></a>
+        <a href="{{ $paginator.Prev.URL }}"><i class="fa fa-caret-left fa-2x"></i></a>
       {{ end }}
       {{ range $paginator.Pagers }}
         {{ if eq .PageNumber $currentPage }}
@@ -22,7 +22,7 @@
         {{ end }}
       {{ end }}
       {{ if $paginator.HasNext }}
-        <a href="{{ $paginator.Next.URL }}"><i class="fa fa-caret-right"></i></a>
+        <a href="{{ $paginator.Next.URL }}"><i class="fa fa-caret-right fa-2x"></i></a>
       {{ end }}
     </div>
   </div>

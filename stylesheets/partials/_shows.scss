@@ -33,8 +33,12 @@
   .pager {
     text-align: center;
     color: $brand-color;
-    word-spacing: $pager-word-spacing;
     margin: $pager-margin;
+    height: $pager-height;
+    display: flex;
+    align-items: center;
+    width: $pager-width;
+    justify-content: space-around;
 
     a {
       color: $brand-color;

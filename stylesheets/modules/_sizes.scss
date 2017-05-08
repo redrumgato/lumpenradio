@@ -68,5 +68,6 @@ $shows-space-between-header-and-content: .75rem;
 $shows-border: dotted 2px $brand-color;
 $show-margin-top: 1rem;
 
-$pager-word-spacing: .25rem;
-$pager-margin: 2rem 0;
+$pager-margin: 2rem auto;
+$pager-height: 2rem;
+$pager-width: 90%;
