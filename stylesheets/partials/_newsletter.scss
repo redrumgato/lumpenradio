@@ -16,6 +16,8 @@
       text-indent: $newsletter-email-indent;
       flex-grow: 1;
       width: $newsletter-email-width;
+      vertical-align: middle;
+      line-height: normal;
     }
 
     &:last-of-type {
