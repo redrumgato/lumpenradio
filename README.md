@@ -13,5 +13,6 @@ Lumpen Radio's website.
 ### Commands
 
 - `npm start`: Starts Hugo and Webpack with LiveReload
-- `npm run build`: Builds the site (Webpack and Hugo) with minifying enabled and stores the result in `public/`
+- `npm test`: Runs JS tests
+- `npm run build`: Builds the site and stores the result in `public/`
 - `npm stop`: Kills all Webpack and Hugo processess. Useful for runaway Webpack daemons.
