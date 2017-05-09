@@ -13,3 +13,34 @@
     }
   }
 }
+
+.posts-footer {
+  width: 100%;
+  color: white;
+  background: $brand-color;
+  height: $posts-footer-height;
+  padding: $posts-footer-padding;
+
+  &__logo-left {
+    float: left;
+    width: 50%;
+    height: 100%;
+
+    img {
+      max-height: 100%;
+      max-width: $posts-footer-img-max-width;
+    }
+  }
+
+  &__logo-right {
+    float: right;
+    height: $posts-footer-logo-right-height;
+    width: $posts-footer-img-max-width;
+    text-align: center;
+
+    img {
+      max-height: $posts-footer-fetus-max-height;
+      max-width: $posts-footer-img-max-width;
+    }
+  }
+}

@@ -53,6 +53,11 @@ $content-img-max-height: 15rem;
 $post-header-margin: .5rem auto auto;
 $post-date-font-size: .8rem;
 $post-margin: auto auto 1.5rem;
+$posts-footer-height: 8rem;
+$posts-footer-padding: 1rem;
+$posts-footer-img-max-width: 5rem;
+$posts-footer-fetus-max-height: 4.75rem;
+$posts-footer-logo-right-height: $posts-footer-height - (2 * $posts-footer-padding);
 
 $input-border: solid 1px $dark-grey;
 $input-height: 3rem;

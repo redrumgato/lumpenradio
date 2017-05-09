@@ -14,8 +14,6 @@ $global-margin-size: 0.5rem;
 
 $border: 2px solid $brand-color;
 
-/* eot, svg, woff, and ttf are missing. Only otf works for now. */
-
 @font-face {
   font-family: Akkurat Mono;
   src: url("/fonts/AkkuratMono.woff") format("woff"), url("/fonts/AkkuratMono.eot") format("eot"), url("/fonts/AkkuratMono.tff") format("truetype"), url("/fonts/AkkuratMono.svg") format("svg")
@@ -27,7 +25,7 @@ body {
   @include border-box-sizing;
 
   font-family: $base-font-family;
-  margin: auto $global-margin-size;
+  margin: $header-height 0 $footer-height;
   overflow-wrap: break-word;
 
   a {

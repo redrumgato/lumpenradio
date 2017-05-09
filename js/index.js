@@ -31,7 +31,7 @@ const initCountdown = () => {
 export default function setup() {
   new Pjax({
     elements: ['a'],
-    selectors: ['title', '.content', '.menu__list'],
+    selectors: ['title', '.content', '.menu__list', '.section-footer'],
   });
 
   menuToggleOnClick('.top-row__hamburger', true);
