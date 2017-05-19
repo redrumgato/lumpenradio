@@ -1,6 +1,6 @@
 @mixin input($fg-color, $bg-color) {
   font-family: Akkurat Mono, FontAwesome;
-  background: $bg-color;;
+  background: $bg-color;
   border: $input-border;
   color: $fg-color;
   height: $input-height;
@@ -8,11 +8,12 @@
   -webkit-appearance: none;
 }
 
-@mixin button($fgColor, $bgColor, $padding: $button-padding) {
+@mixin button($fgColor, $bgColor) {
   @include input($fgColor, $bgColor);
   text-align: center;
   color: $fgColor;
   background: $bgColor;
   font-weight: 600;
-  padding: $padding;
-};
+  padding: $button-padding;
+  @content;
+}

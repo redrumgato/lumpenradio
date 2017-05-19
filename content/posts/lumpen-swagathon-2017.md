@@ -13,8 +13,8 @@ If you like what we are adding to the airwaves in Chicago & beyond, please consi
 
 We’ll only be offering this swag for the next two weeks, so check it out today.
 
-{{< button "Swag Shop &#xf0da" "http://lumpenradio.bigcartel.com" >}}
-
 {{< ext "http://lumpenradio.bigcartel.com/" >}}
   {{< figure src="https://s3-us-west-2.amazonaws.com/s.lumpen.com/media/images/swagimate.gif" alt="Visit our Shop!" >}}
 {{< /ext >}}
+
+{{< button "Swag Shop &#xf0da" "http://lumpenradio.bigcartel.com" >}}

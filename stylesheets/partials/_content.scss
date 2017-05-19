@@ -26,7 +26,9 @@
   }
 
   .button {
-    @include button(white, $brand-color);
+    @include button(white, $brand-color) {
+      border: none;
+    };
     margin: auto;
   }
 
