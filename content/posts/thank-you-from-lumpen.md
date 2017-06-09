@@ -9,7 +9,7 @@ Hello everyone out there!
 
 Thank you for sticking with us as we’ve continued to grow!
 
-We especially want to thank everyone who participated in Lumpen’s Spring Swagathon, helping us to keep beaming our psychomagical programming into homes around Chicago and the rest of the world. Friends like you have helped make this little community radio station a reality, and your support means the world to us.
+We especially want to thank everyone who participated in Lumpen’s Spring Swagathon! Your generous purchases allow us to keep beaming our psychomagical programming into homes around Chicago and the rest of the world. Friends like you have helped make this little community radio station a reality, and your support means the world to us.
 
 The funding we collected helps us program over 40 hours a week of talk. Plus, we’ve got more shows coming on line later this year. Our shows cover the gamut from politics and art, to beer, sports, mysticism and technology. It also allows us to continue our wonderful partnership with {{< ext "Yollocalli" "http://yollocalli.org/" />}} that gives kids real hand-on radio experience. We also program hundreds of hours of music from some of the best curators and DJs in Chicago and beyond. Funding also helps us keep sending our signal out on 105.5FM, which gives us the chance the reach our beautiful city. There’s much more to come from WLPN-LP this year, thanks to your help and generosity, so stay tuned.
 
