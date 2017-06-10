@@ -11,13 +11,11 @@ The Orange One has brought a sense of urgency to our little corner of the world.
 
 We keep up with the headlines every week day during Jamie Trecker’s daily drivetime news segments (7-8 am and 4-6 pm, Monday-Friday) and we are very pleased to air Democracy Now every week day morning at 8pm for some hard-hitting analysis of the day’s events.
 
-{{< ext "https://itunes.apple.com/us/podcast/id1209773755" >}}
-  {{< figure src="https://s3-us-west-2.amazonaws.com/s.lumpen.com/weekinreview/weekinreview.jpg" alt="Lumpen Week in Review" >}}
-{{< /ext >}}
+[{{< figure src="https://s3-us-west-2.amazonaws.com/s.lumpen.com/weekinreview/weekinreview.jpg" alt="Lumpen Week in Review" >}}](https://itunes.apple.com/us/podcast/id1209773755)
 
-We also have a lot of provocative, compelling talk programming on WLPN-LP. We collect the highlights every week on a new show called Lumpen Week in Review. This show usually includes clips of interviews with awesome guests, a Trump Diary, and the other highlights from the week. You can subscribe to the podcast in {{< ext "iTunes" "https://itunes.apple.com/us/podcast/id1209773755" />}} or listen on {{< ext "mixcloud.com/lumpenradio" "https://www.mixcloud.com/lumpenradio" />}}. {{< ext "Last week" "https://www.mixcloud.com/lumpenradio/lumpen-week-in-review-3-3-17" />}} we presented a great sampling of guests featured on the station: Chicago Teacher’s Union President, Karen Lewis, as well as acclaimed author Irvine Welsh, Don DeGrazia and Kristina Golden.
+We also have a lot of provocative, compelling talk programming on WLPN-LP. We collect the highlights every week on a new show called Lumpen Week in Review. This show usually includes clips of interviews with awesome guests, a Trump Diary, and the other highlights from the week. You can subscribe to the podcast in [iTunes](https://itunes.apple.com/us/podcast/id1209773755) or listen on [mixcloud.com/lumpenradio](https://www.mixcloud.com/lumpenradio). [Last week](https://www.mixcloud.com/lumpenradio/lumpen-week-in-review-3-3-17) we presented a great sampling of guests featured on the station: Chicago Teacher’s Union President, Karen Lewis, as well as acclaimed author Irvine Welsh, Don DeGrazia and Kristina Golden.
 
-We also know you are unable to tune in to every DJ, and every talk show on WLPN-LP, so we have tried to do a good job of archiving shows that we think rock on mixcloud. Check in to listen to some worthwhile talk shows and mixes from our bad ass DJs: {{< ext "mixcloud.com/lumpenradio" "https://mixcloud.com/lumpenradio" />}}
+We also know you are unable to tune in to every DJ, and every talk show on WLPN-LP, so we have tried to do a good job of archiving shows that we think rock on mixcloud. Check in to listen to some worthwhile talk shows and mixes from our bad ass DJs: [mixcloud.com/lumpenradio](https://mixcloud.com/lumpenradio)
 
 One of the best things about being around Lumpen Radio is that we get to meet amazing artists, freaks, cultural workers, activists, authors, musicians, and kooks and professionals of all stripes. The flurry of activity, the diversity of programming, the just plain old sick DJs that play psychomagical sounds, has magnified and connected us to so many communities that it makes us feel so proud and so lucky to be part of something this rad.
 

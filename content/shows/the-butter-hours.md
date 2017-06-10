@@ -11,7 +11,7 @@ title = "SCOTT BUFIS & ERIC STREICHERT / THE BUTTER HOURS"
 
 SCOTT BUFIS: Author of the comic book series, Esoteric Dialogue, Scott enjoys tales and topics of the strange and the otherworldly. He is a fan of the art of record finding and compiles sets of sounds that lace together and mold moods. He is a Floridian who has found a place in Chicago.
 
-ERIC STREICHERT: Eric is a Musician/Writer living in Chicago and recent graduate from DePaul's Masters program in Writing and Publishing. He performs with local acts {{< ext "Thin Hymns" "http://thinhymns.bandcamp.com/" />}}, {{< ext "Manual Cinema" "http://manualcinema.com/" />}}, and {{< ext "Color Card" "http://colorcard.bandcamp.com/" />}}. He has Florida origins. He bartends. His astrological spirit animal is the turtle, same as John Dillinger.
+ERIC STREICHERT: Eric is a Musician/Writer living in Chicago and recent graduate from DePaul's Masters program in Writing and Publishing. He performs with local acts [Thin Hymns](http://thinhymns.bandcamp.com/), [Manual Cinema](http://manualcinema.com/), and [Color Card](http://colorcard.bandcamp.com/). He has Florida origins. He bartends. His astrological spirit animal is the turtle, same as John Dillinger.
 
 ### THE BUTTER HOURS
 

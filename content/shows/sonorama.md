@@ -17,5 +17,5 @@ Take a trip through Latin America's vinyl past circa 1950s and on. Get ready for
 
 ### LINKS
 
-Mixcloud: {{<ext "mixcloud.com/sonoramachicago" "mixcloud.com/sonoramachicago" />}}  
-Facebook: {{<ext "facebook.com/sonoramachicago" "facebook.com/sonoramachicago" />}}
+Mixcloud: [mixcloud.com/sonoramachicago](http://mixcloud.com/sonoramachicago)  
+Facebook: [facebook.com/sonoramachicago](http://facebook.com/sonoramachicago)

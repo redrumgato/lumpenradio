@@ -9,7 +9,7 @@ tags = [ "Talk" ]
 
 ### TECH TALK RADIO
 
-Tech Scene Chicago is an independently produced talk radio show produced by {{< ext "Tech Month Chicago" "https://www.techmonthchicago.com/" />}} and hosted by Melanie Adcock. The Tech Scene Chicago Radio show is geared toward the public and discusses how they can become part of the local "tech scene" by giving them the scoop on available technology related events they can attend in their area. Tech Scene Chicago serves as a subsidiary entity of Tech Month Chicago (a non-profit organization) to help further their mission of advocacy awareness and outreach of S.T.E.A.M. (Science, Technology, Engineering. Arts, and Mathematics) throughout the city of Chicago.
+Tech Scene Chicago is an independently produced talk radio show produced by [Tech Month Chicago](https://www.techmonthchicago.com/) and hosted by Melanie Adcock. The Tech Scene Chicago Radio show is geared toward the public and discusses how they can become part of the local "tech scene" by giving them the scoop on available technology related events they can attend in their area. Tech Scene Chicago serves as a subsidiary entity of Tech Month Chicago (a non-profit organization) to help further their mission of advocacy awareness and outreach of S.T.E.A.M. (Science, Technology, Engineering. Arts, and Mathematics) throughout the city of Chicago.
 
 ### BIO
 

@@ -15,6 +15,6 @@ Tim Zawada and the Boogie Munsters crew spin vinyl selections highlighting the a
 
 ### LINKS
 
-{{< ext "facebook.com/boogiemunsters" "facebook.com/boogiemunsters" />}}  
-{{< ext "soundcloud.com/timzawada" "soundcloud.com/timzawada" />}}  
-{{< ext "starcreature.bandcamp.com" "starcreature.bandcamp.com" />}}
+[facebook.com/boogiemunsters](http://facebook.com/boogiemunsters)  
+[soundcloud.com/timzawada](http://soundcloud.com/timzawada)  
+[starcreature.bandcamp.com](http://starcreature.bandcamp.com)

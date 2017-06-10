@@ -13,4 +13,4 @@ A genre-non-specific hour of after-hours listening.
 
 ### BIO
 
-Chris Hefner is a filmmaker, multimedia artist and musician living and working in Chicago.  In addition to his two feature films "The Pink Hotel" (2010) and "The Poisoner" (2014) and a bevy or shorts & music videos, Hefner also continuously produces artwork on paper and plays the musical saw with Daniel Knox.  Multimedia work aside, Hefner has been a record enthusiast and collector throughout, and as such has been DJing regularly since 2003.  Find more at {{< ext "www.cmhefner.com" "www.cmhefner.com" />}}.
+Chris Hefner is a filmmaker, multimedia artist and musician living and working in Chicago.  In addition to his two feature films "The Pink Hotel" (2010) and "The Poisoner" (2014) and a bevy or shorts & music videos, Hefner also continuously produces artwork on paper and plays the musical saw with Daniel Knox.  Multimedia work aside, Hefner has been a record enthusiast and collector throughout, and as such has been DJing regularly since 2003.  Find more at [www.cmhefner.com](http://www.cmhefner.com).

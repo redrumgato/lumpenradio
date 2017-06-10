@@ -6,9 +6,11 @@
     "rules": {
       "space-before-function-paren": 0,
       "no-new": 0,
-      "no-unused-expressions": 0
+      "no-unused-expressions": 0,
+      "quotes": "double"
     },
-    "globals": {
-      "document": false
+    "env": {
+      "browser": true,
+      "jasmine": true
     }
 }

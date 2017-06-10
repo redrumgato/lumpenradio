@@ -13,5 +13,5 @@ Airs: Second Fridays from 4-6PM
 
 Que horas Son Chi? is a monthly broadcast exploring both vintage and modern afro-latin rooted sounds. QHS Chi also features a special guest program featuring prominent local musicians and DJs.
 
-{{< ext "afroqbano.com" "http://www.afroqbano.com/" />}}  
-{{< ext "villapalooza.org" "http://www.villapalooza.org/" />}}
+[afroqbano.com](http://www.afroqbano.com/)  
+[villapalooza.org](http://www.villapalooza.org/)

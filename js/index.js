@@ -1,84 +1,83 @@
-import Pjax from 'pjax';
-import $ from 'jquery';
-import { Howler, Howl } from 'howler';
-import countdown from './countdown';
+import Pjax from "pjax";
+import $ from "jquery";
+import { Howler, Howl } from "howler";
+import countdown from "./countdown";
 
 let bodyScrollPosition;
 
 const menuToggleOnClick = (selector, show) => {
-  const $body = $('body');
+  const $body = $("body");
   $(selector).click(() => {
     if (show) { (bodyScrollPosition = $body.scrollTop()); }
-    $('.menu').css('display', show ? 'flex' : 'none');
-    $body.css('position', show ? 'fixed' : 'static');
+    $(".menu").css("display", show ? "flex" : "none");
+    $body.css("position", show ? "fixed" : "static");
     if (!show) { $body.scrollTop(bodyScrollPosition); }
   });
 };
 
+const externalizeLinks = () => {
+  $("a").filter((_, elem) => elem.hostname && elem.hostname !== location.hostname).attr("target", "_blank");
+};
+
 const initCountdown = () => {
-  countdown($('.countdown').attr('data-date'), (timeSegments) => {
+  countdown($(".countdown").attr("data-date"), (timeSegments) => {
     if (!timeSegments) {
-      $('.countdown').hide();
+      $(".countdown").hide();
       return;
     }
-    $('.countdown .days').html(timeSegments[0]);
-    $('.countdown .hours').html(timeSegments[1]);
-    $('.countdown .minutes').html(timeSegments[2]);
-    $('.countdown .seconds').html(timeSegments[3]);
+    $(".countdown .days").html(timeSegments[0]);
+    $(".countdown .hours").html(timeSegments[1]);
+    $(".countdown .minutes").html(timeSegments[2]);
+    $(".countdown .seconds").html(timeSegments[3]);
   });
 };
 
 export default function setup() {
   new Pjax({
-    elements: ['a'],
-    selectors: ['title', '.content', '.menu__list', '.section-footer'],
+    elements: ["a"],
+    selectors: ["title", ".content", ".menu__list", ".section-footer"],
   });
 
-  menuToggleOnClick('.top-row__hamburger', true);
-  menuToggleOnClick('.menu__close-button, .menu__link', false);
+  externalizeLinks();
+  menuToggleOnClick(".top-row__hamburger", true);
+  menuToggleOnClick(".menu__close-button, .menu__link", false);
   initCountdown();
 
-  $(document).on('pjax:complete', () => {
-    menuToggleOnClick('.menu__link', false);
+  $(document).on("pjax:complete", () => {
+    externalizeLinks();
+    menuToggleOnClick(".menu__link", false);
     initCountdown();
   });
 
-  const $play = $('#play-button');
-  const $pause = $('#pause-button');
-  const $loading = $('.player__loading-icon');
+  const $play = $("#play-button");
+  const $pause = $("#pause-button");
+  const $loading = $(".player__loading-icon");
 
   Howler.unload();
 
   const stream = new Howl({
-    src: 'http://stream.lumpen.fm:7416/;stream/1',
-    format: 'mp3',
+    src: "http://stream.lumpen.fm:7416/;stream/1",
+    format: "mp3",
     html5: true,
     preload: false,
     onload () {
-      console.log('stream loaded');
       $loading.hide();
       $pause.show();
     },
     onloaderror (_, error) {
-      console.log('error:');
+      console.log("error:");
       console.log(error);
-    },
-    onplay () {
-      console.log('playing');
-    },
-    onpause () {
-      console.log('pausing');
     },
   });
 
-  $('.player__buttons').click(() => {
+  $(".player__buttons").click(() => {
     if (stream.playing()) {
       $pause.hide();
       $play.show();
       stream.pause();
     } else {
       $play.hide();
-      stream.state() === 'loaded' ? $pause.show() : $loading.show();
+      stream.state() === "loaded" ? $pause.show() : $loading.show();
       stream.play();
     }
   });

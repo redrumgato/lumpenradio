@@ -11,4 +11,4 @@ title = "VARIOUS / RADIO FREE BRIDGEPORT"
 
 A talk show with guests hailing from the worlds of food, music, art, social change and politics. Not necessarily in that order.
 
-{{< ext "facebook" "https://www.facebook.com/radiobridgeport" />}}
+[facebook](https://www.facebook.com/radiobridgeport)

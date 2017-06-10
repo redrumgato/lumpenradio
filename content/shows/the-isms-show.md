@@ -9,7 +9,7 @@ image = "https://s3-us-west-2.amazonaws.com/s.lumpen.com/media/images/showimages
 
 ### BIO
 
-Betty Heredia is a Chicago artist who writes & illustrates her own comics. Her paintings and drawings are inspired by music, and can be found on display at various venues across the city and suburbs. Full of frantic energy, Ms. Heredia finds her flow while meditating on colors, forms, and vibes. She is a member of the Awkward Rebels Collective and founder of the N.C.A Gallery and Community Space. You can follow her nonsensical rants, likes, and visuals at: {{< ext "bibliokleptomania.tumblr.com" "bibliokleptomania.tumblr.com" />}}
+Betty Heredia is a Chicago artist who writes & illustrates her own comics. Her paintings and drawings are inspired by music, and can be found on display at various venues across the city and suburbs. Full of frantic energy, Ms. Heredia finds her flow while meditating on colors, forms, and vibes. She is a member of the Awkward Rebels Collective and founder of the N.C.A Gallery and Community Space. You can follow her nonsensical rants, likes, and visuals at: [bibliokleptomania.tumblr.com](http://bibliokleptomania.tumblr.com)
 
 ### THE ISMS SHOW
 

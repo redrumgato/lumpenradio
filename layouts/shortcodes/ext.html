@@ -1,5 +1,0 @@
-{{- if len .Params | eq 2 -}}
-<a href="{{ .Get 1 }}" target="_blank">{{ .Get 0 }}</a>
-{{- else -}}
-<a href="{{ .Get 0 }}" target="_blank">{{ .Inner }}</a>
-{{- end -}}

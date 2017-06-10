@@ -64,4 +64,14 @@ describe("The UI", () => {
       expect($(".countdown")).toBeHidden();
     });
   });
+
+  describe("links", () => {
+    it("makes all external links open in a new tab", () => {
+      expect($("#external-link")).toHaveAttr("target", "_blank");
+    });
+
+    it("makes internal links open in the same tab", () => {
+      expect($("#internal-link")).not.toHaveAttr("target");
+    });
+  });
 });

@@ -9,7 +9,7 @@ thumbnail = "https://s3-us-west-2.amazonaws.com/s.lumpen.com/media/images/showim
 
 ### BIO
 
-The Ponderers is formed by Sandra Trevino of Enchufate and Stephanie Manriquez from Revista Contratiempo and FMEL, both Chicago-based journalists. The music enthusiasts play a large volume of female-fronted music with a focus on women empowerment. They've also curated a digital source of articles and interviews featuring their favorite female artists which you can find at {{< ext "gozamos.com/theponderers" "gozamos.com/theponderers" />}}.
+The Ponderers is formed by Sandra Trevino of Enchufate and Stephanie Manriquez from Revista Contratiempo and FMEL, both Chicago-based journalists. The music enthusiasts play a large volume of female-fronted music with a focus on women empowerment. They've also curated a digital source of articles and interviews featuring their favorite female artists which you can find at [gozamos.com/theponderers](http://gozamos.com/theponderers).
 
 ### THE PONDERERS
 

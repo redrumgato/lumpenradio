@@ -11,4 +11,4 @@ date = "2017-05-04T14:16:47-05:00"
 
 Airs: Every Saturday from 4-5PM
 
-BeerDownload is the only show that pits beers head to head in a tournament style competition to find out which beer reigns supreme. BeerDownload also features interviews and news from the beer industry. {{<ext "beerdownload.com" "http://www.beerdownload.com/" />}}
+BeerDownload is the only show that pits beers head to head in a tournament style competition to find out which beer reigns supreme. BeerDownload also features interviews and news from the beer industry. [beerdownload.com](http://www.beerdownload.com/)
